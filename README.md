@@ -1,5 +1,4 @@
 # Open House 2018
-#Inc
 
 ## Robin Vinod © 2018
 - - - -
