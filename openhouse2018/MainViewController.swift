@@ -12,30 +12,30 @@ import Cards
 class MainViewController: UIViewController {
     
     
-    let card = CardHighlight(frame: CGRect(x: 30, y: 30, width: 300 , height: 240))
+    let comingnext = CardHighlight(frame: CGRect(x: 30, y: 30, width: 300 , height: 240))
     let aboutSST = CardPlayer(frame: CGRect(x: 30, y: 290, width: 300 , height: 360))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        card.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
-        card.icon = UIImage(named: "ssticon")
-        card.title = "Coming up\nnext"
-        card.itemTitle = "Starting soon:"
-        card.itemSubtitle = "Tap to enlarge"
-        card.textColor = UIColor.white
+        comingnext.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
+        comingnext.icon = UIImage(named: "ssticon")
+        comingnext.title = "Coming up\nnext"
+        comingnext.itemTitle = "Starting soon:"
+        comingnext.itemSubtitle = "Tap to enlarge"
+        comingnext.textColor = UIColor.white
         
-        card.hasParallax = true
+        comingnext.hasParallax = true
         
         let cardContentVC = storyboard!.instantiateViewController(withIdentifier: "CardContent")
-        card.shouldPresent(cardContentVC, from: self, fullscreen: false)
+        comingnext.shouldPresent(cardContentVC, from: self, fullscreen: false)
         
-        view.addSubview(card)
+        view.addSubview(comingnext)
         
         //
         
         aboutSST.textColor = UIColor.black
-        aboutSST.videoSource = URL(string: "https://youtu.be/Fe-ojtFLXRM")
+        aboutSST.videoSource = URL(string: "https://firebasestorage.googleapis.com/v0/b/open-house-2018.appspot.com/o/SST%20Homepage%202017.mp4?alt=media&token=697d1687-cd5b-493c-9732-57559824dfad")
         aboutSST.shouldDisplayPlayer(from: self)    //Required.
         
         //aboutSST.playerCover = UIImage(named: "mvBackground")!  // Shows while the player is loading
