@@ -49,7 +49,7 @@ class MainViewController: UIViewController {
         aboutSST.category = "About SST"
         aboutSST.hasParallax = true
         
-        let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "CardContent")
+        let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
         
     }
