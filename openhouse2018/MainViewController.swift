@@ -11,9 +11,11 @@ import Cards
 
 class MainViewController: UIViewController {
     
+    @IBOutlet var comingnext: CardHighlight!
+    @IBOutlet var aboutSST: CardPlayer!
     
-    let comingnext = CardHighlight(frame: CGRect(x: 30, y: 30, width: 300 , height: 240))
-    let aboutSST = CardPlayer(frame: CGRect(x: 30, y: 290, width: 300 , height: 360))
+    // let comingnext = CardHighlight(frame: CGRect(x: 30, y: 30, width: 300 , height: 240))
+    // let aboutSST = CardPlayer(frame: CGRect(x: 30, y: 290, width: 300 , height: 360))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,19 +29,17 @@ class MainViewController: UIViewController {
         
         comingnext.hasParallax = true
         
-        let cardContentVC = storyboard!.instantiateViewController(withIdentifier: "CardContent")
-        comingnext.shouldPresent(cardContentVC, from: self, fullscreen: false)
-        
-        view.addSubview(comingnext)
+        let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "CardContent")
+        comingnext.shouldPresent(comingnextVC, from: self, fullscreen: false)
         
         //
         
         aboutSST.textColor = UIColor.black
         aboutSST.videoSource = URL(string: "https://firebasestorage.googleapis.com/v0/b/open-house-2018.appspot.com/o/SST%20Homepage%202017.mp4?alt=media&token=697d1687-cd5b-493c-9732-57559824dfad")
-        aboutSST.shouldDisplayPlayer(from: self)    //Required.
+        aboutSST.shouldDisplayPlayer(from: self)
         
-        //aboutSST.playerCover = UIImage(named: "mvBackground")!  // Shows while the player is loading
-        aboutSST.playImage = UIImage(named: "CardPlayerPlayIcon")!  // Play button icon
+        aboutSST.playerCover = UIImage(named: "sstlogo")!
+        aboutSST.playImage = UIImage(named: "CardPlayerPlayIcon")!
         
         aboutSST.isAutoplayEnabled = true
         aboutSST.shouldRestartVideoWhenPlaybackEnds = true
@@ -47,11 +47,10 @@ class MainViewController: UIViewController {
         aboutSST.title = "Our School"
         aboutSST.subtitle = "Tap to learn more about SST "
         aboutSST.category = "About SST"
+        aboutSST.hasParallax = true
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "CardContent")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
-        
-        view.addSubview(aboutSST)
         
     }
     
