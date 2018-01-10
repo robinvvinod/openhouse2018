@@ -1,24 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ely-51-JQU"/>
+                        <viewControllerLayoutGuide type="bottom" id="SvG-NN-8S3"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlK-VX-lf5" customClass="CardHighlight" customModule="Cards">
+                                <rect key="frame" x="37" y="203" width="300" height="340"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="340" id="8vk-59-enT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hL9-SI-0Xe" customClass="CardPlayer" customModule="Cards">
+                                <rect key="frame" x="37" y="573" width="300" height="340"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="340" id="6ny-Gy-Opl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome To SST!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXY-Uj-niX">
+                                <rect key="frame" x="37" y="51" width="300" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="zDY-fp-h6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGh-Es-7yV">
+                                <rect key="frame" x="37" y="84" width="200" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="0vA-Y8-ry8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DXY-Uj-niX" secondAttribute="trailing" constant="22" id="1Wo-T2-Fzd"/>
+                            <constraint firstItem="DXY-Uj-niX" firstAttribute="top" secondItem="ely-51-JQU" secondAttribute="bottom" constant="31" id="F0h-oM-MXG"/>
+                            <constraint firstItem="kGh-Es-7yV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="MkY-2o-Ba0"/>
+                            <constraint firstAttribute="trailing" secondItem="hL9-SI-0Xe" secondAttribute="trailing" constant="38" id="NYf-zP-G0i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dlK-VX-lf5" secondAttribute="trailing" constant="22" id="SCC-KE-hUr"/>
+                            <constraint firstItem="dlK-VX-lf5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="T7e-oE-Usi"/>
+                            <constraint firstItem="kGh-Es-7yV" firstAttribute="top" secondItem="ely-51-JQU" secondAttribute="bottom" constant="64" id="Uhx-31-rvn"/>
+                            <constraint firstItem="hL9-SI-0Xe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="37" id="aps-94-vYO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kGh-Es-7yV" secondAttribute="trailing" constant="122" id="bei-uw-cXC"/>
+                            <constraint firstItem="hL9-SI-0Xe" firstAttribute="top" secondItem="dlK-VX-lf5" secondAttribute="bottom" constant="30" id="htl-Rm-PHv"/>
+                            <constraint firstItem="DXY-Uj-niX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="tcs-s6-v3t"/>
+                            <constraint firstItem="dlK-VX-lf5" firstAttribute="top" secondItem="kGh-Es-7yV" secondAttribute="bottom" constant="30" id="yiR-9v-dC6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3KF-Ea-gmb"/>
                     </view>
+                    <connections>
+                        <outlet property="aboutSST" destination="hL9-SI-0Xe" id="eF2-0d-GnX"/>
+                        <outlet property="comingnext" destination="dlK-VX-lf5" id="WZK-q8-htz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,25 +91,24 @@
         <scene sceneID="fAe-JJ-9Uv">
             <objects>
                 <viewController storyboardIdentifier="CardContent" id="tbv-ID-qRl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sbe-i6-6u6"/>
+                        <viewControllerLayoutGuide type="bottom" id="cUJ-HW-7PV"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kNO-Eu-5IK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDc-wn-2j3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDc-wn-2j3">
                                 <rect key="frame" x="116" y="297" width="143" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="XDc-wn-2j3" firstAttribute="centerX" secondItem="kNO-Eu-5IK" secondAttribute="centerX" id="aLG-zc-1QJ"/>
-                            <constraint firstItem="XDc-wn-2j3" firstAttribute="centerY" secondItem="kNO-Eu-5IK" secondAttribute="centerY" id="ps5-LD-eFg"/>
-                            <constraint firstItem="XDc-wn-2j3" firstAttribute="top" secondItem="0Z9-tr-qFd" secondAttribute="top" constant="277" id="qTR-KP-FpZ"/>
-                            <constraint firstItem="XDc-wn-2j3" firstAttribute="leading" secondItem="0Z9-tr-qFd" secondAttribute="leading" constant="116" id="yJ3-RN-KUQ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Z9-tr-qFd"/>
+                        <viewLayoutGuide key="safeArea" id="SRa-Bd-7Ge"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJ2-DZ-abd" userLabel="First Responder" sceneMemberID="firstResponder"/>
