@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
         
         comingnext.hasParallax = true
         
-        let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "CardContent")
+        let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "nextVC")
         comingnext.shouldPresent(comingnextVC, from: self, fullscreen: false)
         
         //

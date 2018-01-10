@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E4373C42005D6FF00DFD17F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4373C32005D6FF00DFD17F /* NextViewController.swift */; };
 		2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8866FC200475D20090BCAF /* AppDelegate.swift */; };
 		2E886702200475D20090BCAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E886700200475D20090BCAF /* Main.storyboard */; };
 		2E886704200475D20090BCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E886703200475D20090BCAF /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E4373C32005D6FF00DFD17F /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		2E8866F9200475D20090BCAF /* openhouse2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openhouse2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8866FC200475D20090BCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E886701200475D20090BCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				2E8866FC200475D20090BCAF /* AppDelegate.swift */,
 				2EA40B592004F1B5008364A8 /* MainViewController.swift */,
+				2E4373C32005D6FF00DFD17F /* NextViewController.swift */,
 				2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
 				2E886703200475D20090BCAF /* Assets.xcassets */,
@@ -464,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
+				2E4373C42005D6FF00DFD17F /* NextViewController.swift in Sources */,
 				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
 			);
