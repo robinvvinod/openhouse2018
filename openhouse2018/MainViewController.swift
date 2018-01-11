@@ -42,8 +42,6 @@ class MainViewController: UIViewController {
         aboutSST.isAutoplayEnabled = true
         aboutSST.shouldRestartVideoWhenPlaybackEnds = true
         
-        // aboutSST.backgroundColor = UIColor(red: /255, green: /255, blue: /255, alpha: 1)
-        
         aboutSST.title = "Our School"
         aboutSST.subtitle = "Tap to learn more about SST "
         aboutSST.category = "About SST"
