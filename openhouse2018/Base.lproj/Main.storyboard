@@ -29,21 +29,21 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-d2-0LV">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="913"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardHighlight" customModule="Cards">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardPlayer" customModule="Cards">
                                                 <rect key="frame" x="37" y="201" width="300" height="340"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="340" id="mku-OJ-6lt"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardPlayer" customModule="Cards">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardHighlight" customModule="Cards">
                                                 <rect key="frame" x="37" y="571" width="300" height="340"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="340" id="YIH-IH-Jcu"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To SST!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfP-RA-ajy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Visitor." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfP-RA-ajy">
                                                 <rect key="frame" x="37" y="49" width="300" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="kzV-cf-RjR"/>
@@ -57,7 +57,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="89" id="Hxk-9Y-KYH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -100,8 +100,9 @@
                     </view>
                     <size key="freeformSize" width="375" height="913"/>
                     <connections>
-                        <outlet property="aboutSST" destination="z3g-Ck-8Ti" id="iP1-OP-G6h"/>
-                        <outlet property="comingnext" destination="LgU-cU-v49" id="zMe-ay-EcS"/>
+                        <outlet property="aboutSST" destination="LgU-cU-v49" id="yzK-C2-JtF"/>
+                        <outlet property="comingnext" destination="z3g-Ck-8Ti" id="WTy-Qo-utQ"/>
+                        <outlet property="gradientView" destination="x3r-d2-0LV" id="Tmd-S5-i10"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWH-CF-fQc" userLabel="First Responder" sceneMemberID="firstResponder"/>

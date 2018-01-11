@@ -11,21 +11,19 @@ import Cards
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var gradientView: UIView!
     @IBOutlet var comingnext: CardHighlight!
     @IBOutlet var aboutSST: CardPlayer!
-    
-    // let comingnext = CardHighlight(frame: CGRect(x: 30, y: 30, width: 300 , height: 240))
-    // let aboutSST = CardPlayer(frame: CGRect(x: 30, y: 290, width: 300 , height: 360))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        comingnext.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
+        comingnext.backgroundColor = UIColor.white
         comingnext.icon = UIImage(named: "ssticon")
         comingnext.title = "Coming up\nnext"
         comingnext.itemTitle = "Starting soon:"
         comingnext.itemSubtitle = "Tap to enlarge"
-        comingnext.textColor = UIColor.white
+        comingnext.textColor = UIColor.black
         
         comingnext.hasParallax = true
         
@@ -54,8 +52,15 @@ class MainViewController: UIViewController {
         
     }
     
-    @objc func aboutSSTBtnAction(_ button: UIButton) {
-        print("Success")
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let gradient = CAGradientLayer()
+        
+        gradient.frame = gradientView.bounds
+        gradient.colors = [UIColor.white.cgColor, UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1).cgColor]
+        
+        gradientView.layer.insertSublayer(gradient, at: 0)
+        
     }
     
     override func didReceiveMemoryWarning() {
