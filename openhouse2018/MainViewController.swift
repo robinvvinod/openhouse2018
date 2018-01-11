@@ -18,12 +18,12 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        comingnext.backgroundColor = UIColor.white
+        comingnext.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
         comingnext.icon = UIImage(named: "ssticon")
         comingnext.title = "Coming up\nnext"
         comingnext.itemTitle = "Starting soon:"
         comingnext.itemSubtitle = "Tap to enlarge"
-        comingnext.textColor = UIColor.black
+        comingnext.textColor = UIColor.white
         
         comingnext.hasParallax = true
         
@@ -42,6 +42,8 @@ class MainViewController: UIViewController {
         aboutSST.isAutoplayEnabled = true
         aboutSST.shouldRestartVideoWhenPlaybackEnds = true
         
+        // aboutSST.backgroundColor = UIColor(red: /255, green: /255, blue: /255, alpha: 1)
+        
         aboutSST.title = "Our School"
         aboutSST.subtitle = "Tap to learn more about SST "
         aboutSST.category = "About SST"
@@ -51,7 +53,7 @@ class MainViewController: UIViewController {
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
         
     }
-    
+    /*
     override func viewDidAppear(_ animated: Bool) {
         
         let gradient = CAGradientLayer()
@@ -62,7 +64,7 @@ class MainViewController: UIViewController {
         gradientView.layer.insertSublayer(gradient, at: 0)
         
     }
-    
+    */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
