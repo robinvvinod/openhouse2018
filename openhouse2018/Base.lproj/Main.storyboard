@@ -31,32 +31,24 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardPlayer" customModule="Cards">
                                                 <rect key="frame" x="37" y="201" width="300" height="340"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="340" id="mku-OJ-6lt"/>
-                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardHighlight" customModule="Cards">
                                                 <rect key="frame" x="37" y="571" width="300" height="340"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="340" id="YIH-IH-Jcu"/>
-                                                </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Visitor." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfP-RA-ajy">
                                                 <rect key="frame" x="37" y="49" width="300" height="49"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="49" id="kzV-cf-RjR"/>
-                                                </constraints>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5x-Ih-9yH">
-                                                <rect key="frame" x="37" y="82" width="200" height="89"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="89" id="Hxk-9Y-KYH"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5x-Ih-9yH">
+                                                <rect key="frame" x="37" y="82" width="135" height="89"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -64,19 +56,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="G5x-Ih-9yH" firstAttribute="leading" secondItem="x3r-d2-0LV" secondAttribute="leading" constant="37" id="6ST-fW-KfN"/>
-                                            <constraint firstAttribute="trailing" secondItem="G5x-Ih-9yH" secondAttribute="trailing" constant="138" id="7LF-BV-UKk"/>
-                                            <constraint firstAttribute="trailing" secondItem="pfP-RA-ajy" secondAttribute="trailing" constant="38" id="R34-Ct-2FJ"/>
-                                            <constraint firstItem="pfP-RA-ajy" firstAttribute="leading" secondItem="x3r-d2-0LV" secondAttribute="leading" constant="37" id="YFc-a1-5Hb"/>
-                                            <constraint firstAttribute="trailing" secondItem="LgU-cU-v49" secondAttribute="trailing" constant="38" id="dMN-1G-NGL"/>
-                                            <constraint firstAttribute="trailing" secondItem="z3g-Ck-8Ti" secondAttribute="trailing" constant="38" id="fe3-0B-AgZ"/>
                                             <constraint firstAttribute="height" constant="913" id="h3u-x7-0y8"/>
-                                            <constraint firstItem="z3g-Ck-8Ti" firstAttribute="leading" secondItem="x3r-d2-0LV" secondAttribute="leading" constant="37" id="l0R-u3-Ynn"/>
-                                            <constraint firstItem="LgU-cU-v49" firstAttribute="leading" secondItem="x3r-d2-0LV" secondAttribute="leading" constant="37" id="lCO-VG-7cW"/>
-                                            <constraint firstItem="G5x-Ih-9yH" firstAttribute="top" secondItem="x3r-d2-0LV" secondAttribute="top" constant="82" id="q1z-yQ-i1x"/>
-                                            <constraint firstItem="LgU-cU-v49" firstAttribute="top" secondItem="G5x-Ih-9yH" secondAttribute="bottom" constant="30" id="twc-Eo-Fjr"/>
-                                            <constraint firstItem="z3g-Ck-8Ti" firstAttribute="top" secondItem="LgU-cU-v49" secondAttribute="bottom" constant="30" id="wXj-Kq-ut4"/>
-                                            <constraint firstItem="pfP-RA-ajy" firstAttribute="top" secondItem="x3r-d2-0LV" secondAttribute="top" constant="49" id="yb0-Cn-7cu"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -107,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWH-CF-fQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="143"/>
+            <point key="canvasLocation" x="60" y="142.57871064467767"/>
         </scene>
         <!--AboutSST View Controller-->
         <scene sceneID="c0X-b9-2Sd">
