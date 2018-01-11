@@ -36,7 +36,7 @@ class MainViewController: UIViewController {
         aboutSST.videoSource = URL(string: "https://firebasestorage.googleapis.com/v0/b/open-house-2018.appspot.com/o/SST%20Homepage%202017.mp4?alt=media&token=697d1687-cd5b-493c-9732-57559824dfad")
         aboutSST.shouldDisplayPlayer(from: self)
         
-        aboutSST.playerCover = UIImage(named: "sstlogo")!
+        aboutSST.playerCover = UIImage(named: "mvBg")!
         aboutSST.playImage = UIImage(named: "CardPlayerPlayIcon")!
         
         aboutSST.isAutoplayEnabled = true
@@ -47,24 +47,29 @@ class MainViewController: UIViewController {
         aboutSST.title = "Our School"
         aboutSST.subtitle = "Tap to learn more about SST "
         aboutSST.category = "About SST"
+        aboutSST.subtitleSize = 16
         aboutSST.hasParallax = true
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
         
     }
-    /*
+    
     override func viewDidAppear(_ animated: Bool) {
         
         let gradient = CAGradientLayer()
         
         gradient.frame = gradientView.bounds
-        gradient.colors = [UIColor.white.cgColor, UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1).cgColor]
+        gradient.colors = [UIColor(red: 236/255, green: 247/255, blue: 231/255, alpha: 1).cgColor, UIColor(red: 200/255, green: 126/255, blue: 213/255, alpha: 1).cgColor]
         
         gradientView.layer.insertSublayer(gradient, at: 0)
         
     }
-    */
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
