@@ -49,7 +49,7 @@ class MainViewController: UIViewController {
         aboutSST.hasParallax = true
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
-        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
+        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
         
     }
     
