@@ -58,7 +58,7 @@ class MainViewController: UIViewController {
         let gradient = CAGradientLayer()
         
         gradient.frame = gradientView.bounds
-        gradient.colors = [UIColor(red: 236/255, green: 247/255, blue: 231/255, alpha: 1).cgColor, UIColor(red: 200/255, green: 126/255, blue: 213/255, alpha: 1).cgColor]
+        gradient.colors = [UIColor(red: 236/255, green: 247/255, blue: 231/255, alpha: 1).cgColor, UIColor(red: 208/255, green: 156/255, blue: 215/255, alpha: 1).cgColor]
         
         gradientView.layer.insertSublayer(gradient, at: 0)
         
