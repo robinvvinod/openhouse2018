@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class AboutSSTViewController: UIViewController {
+class AboutSSTViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var webview: WKWebView!
     
@@ -20,6 +20,11 @@ class AboutSSTViewController: UIViewController {
         let request = URLRequest(url: url!)
         
         webview.load(request)
+        
+        func webViewDidFinishLoad(webView: UIWebView!) {
+            print("Webview did finish load")
+        }
+        
         
     }
 
