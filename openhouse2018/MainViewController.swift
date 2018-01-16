@@ -36,7 +36,7 @@ class MainViewController: UIViewController {
         aboutSST.videoSource = URL(string: "https://firebasestorage.googleapis.com/v0/b/open-house-2018.appspot.com/o/SST%20Homepage%202017.mp4?alt=media&token=697d1687-cd5b-493c-9732-57559824dfad")
         aboutSST.shouldDisplayPlayer(from: self)
         
-        aboutSST.playerCover = UIImage(named: "mvBg")!
+        aboutSST.playerCover = UIImage(named: "sstsketch")!
         aboutSST.playImage = UIImage(named: "CardPlayerPlayIcon")!
         
         aboutSST.isAutoplayEnabled = true
@@ -49,7 +49,7 @@ class MainViewController: UIViewController {
         aboutSST.hasParallax = true
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
-        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
+        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
         
     }
     
