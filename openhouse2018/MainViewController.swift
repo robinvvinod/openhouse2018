@@ -8,13 +8,14 @@
 
 import UIKit
 import Cards
+import StatusAlert
 
 class MainViewController: UIViewController {
     
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet var comingnext: CardHighlight!
     @IBOutlet var aboutSST: CardPlayer!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +27,7 @@ class MainViewController: UIViewController {
         comingnext.textColor = UIColor.white
         
         comingnext.hasParallax = true
-        
+    
         let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "nextVC")
         comingnext.shouldPresent(comingnextVC, from: self, fullscreen: false)
         
@@ -68,11 +69,12 @@ class MainViewController: UIViewController {
         return true
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
 }
+
 
