@@ -60,6 +60,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.95686274509803915" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="x3r-d2-0LV" secondAttribute="trailing" id="HxB-R6-rcE"/>
                                     <constraint firstItem="x3r-d2-0LV" firstAttribute="leading" secondItem="AbM-A2-O8E" secondAttribute="leading" id="Vev-cF-zxr"/>
@@ -68,7 +69,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.96862745098039216" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="AbM-A2-O8E" firstAttribute="leading" secondItem="4CN-HP-1hR" secondAttribute="leading" id="RDs-a0-ZMe"/>
                             <constraint firstItem="x3r-d2-0LV" firstAttribute="width" secondItem="SFE-ZR-sJi" secondAttribute="width" id="RQA-kV-boz"/>
@@ -151,6 +152,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SRa-Bd-7Ge"/>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="kNO-Eu-5IK" id="wve-gL-T7V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJ2-DZ-abd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

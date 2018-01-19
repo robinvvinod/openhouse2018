@@ -7,6 +7,7 @@ target 'openhouse2018' do
 
   # Pods for openhouse2018
   pod 'Cards'
+  pod 'StatusAlert'  
 
   target 'openhouse2018Tests' do
     inherit! :search_paths
