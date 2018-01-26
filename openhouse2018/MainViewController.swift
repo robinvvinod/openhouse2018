@@ -8,7 +8,6 @@
 
 import UIKit
 import Cards
-import StatusAlert
 
 class MainViewController: UIViewController {
     
@@ -41,7 +40,7 @@ class MainViewController: UIViewController {
         aboutSST.playImage = UIImage(named: "CardPlayerPlayIcon")!
         
         aboutSST.isAutoplayEnabled = true
-        aboutSST.shouldRestartVideoWhenPlaybackEnds = true
+        aboutSST.shouldRestartVideoWhenPlaybackEnds = false
         
         aboutSST.title = "Our School"
         aboutSST.subtitle = "Tap to learn more about SST "
@@ -50,7 +49,7 @@ class MainViewController: UIViewController {
         aboutSST.hasParallax = true
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
-        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
+        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
         
     }
     

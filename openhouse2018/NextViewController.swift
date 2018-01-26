@@ -7,21 +7,14 @@
 //
 
 import UIKit
-import StatusAlert
 
 class NextViewController: UIViewController {
 
     @IBOutlet var mainView: UIView!
-    
-    let swipeAlert = StatusAlert.instantiate(withImage: UIImage(named: "Some image name"),
-                                             title: "Instructions",
-                                             message: "You can swipe up or tap outside the card edges to go back to the main page",
-                                             canBePickedOrDismissed: false)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        swipeAlert.show(in: mainView)
         
             
     }
