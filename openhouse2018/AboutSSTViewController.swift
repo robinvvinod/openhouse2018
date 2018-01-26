@@ -8,7 +8,6 @@
 
 import UIKit
 import WebKit
-import StatusAlert
 
 class AboutSSTViewController: UIViewController, UIWebViewDelegate {
 

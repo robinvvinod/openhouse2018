@@ -6,8 +6,8 @@ target 'openhouse2018' do
   use_frameworks!
 
   # Pods for openhouse2018
-  pod 'Cards'
-  pod 'StatusAlert'  
+  pod 'Cards'  
+  pod 'SwiftMessages'
 
   target 'openhouse2018Tests' do
     inherit! :search_paths
