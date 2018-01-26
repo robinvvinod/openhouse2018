@@ -8,6 +8,7 @@
 
 import UIKit
 import Cards
+import SwiftMessages
 
 class MainViewController: UIViewController {
     
@@ -30,8 +31,6 @@ class MainViewController: UIViewController {
         let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "nextVC")
         comingnext.shouldPresent(comingnextVC, from: self, fullscreen: false)
         
-        //
-        
         aboutSST.textColor = UIColor.black
         aboutSST.videoSource = URL(string: "https://firebasestorage.googleapis.com/v0/b/open-house-2018.appspot.com/o/SST%20Homepage%202017.mp4?alt=media&token=697d1687-cd5b-493c-9732-57559824dfad")
         aboutSST.shouldDisplayPlayer(from: self)
@@ -49,7 +48,22 @@ class MainViewController: UIViewController {
         aboutSST.hasParallax = true
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
-        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
+        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
+        
+        let instructionView = MessageView.viewFromNib(layout: .cardView)
+        SwiftMessages.defaultConfig.presentationStyle = .top
+        SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
+        
+        instructionView.configureTheme(.error)
+        instructionView.configureDropShadow()
+        
+        let iconText = ["🤔", "😳", "🙄", "😶"].sm_random()!
+        
+        instructionView.configureContent(title: "Warning", body: "Consider yourself warned.", iconText: iconText)
+        
+        instructionView.button?.isHidden = true
+        
+        SwiftMessages.show(view: instructionView)
         
     }
     
