@@ -15,9 +15,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet var comingnext: CardHighlight!
     @IBOutlet var aboutSST: CardPlayer!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         comingnext.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
         comingnext.icon = UIImage(named: "ssticon")
@@ -27,19 +28,19 @@ class MainViewController: UIViewController {
         comingnext.textColor = UIColor.white
         
         comingnext.hasParallax = true
-    
+        
         let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "nextVC")
         comingnext.shouldPresent(comingnextVC, from: self, fullscreen: false)
         
         aboutSST.textColor = UIColor.black
-        aboutSST.videoSource = URL(string: "https://firebasestorage.googleapis.com/v0/b/open-house-2018.appspot.com/o/SST%20Homepage%202017.mp4?alt=media&token=697d1687-cd5b-493c-9732-57559824dfad")
+        aboutSST.videoSource = URL(fileURLWithPath: Bundle.main.path(forResource: "video", ofType:"mp4")!)
         aboutSST.shouldDisplayPlayer(from: self)
         
         aboutSST.playerCover = UIImage(named: "sstsketch")!
         aboutSST.playImage = UIImage(named: "CardPlayerPlayIcon")!
         
         aboutSST.isAutoplayEnabled = true
-        aboutSST.shouldRestartVideoWhenPlaybackEnds = false
+        aboutSST.shouldRestartVideoWhenPlaybackEnds = true
         
         aboutSST.title = "Our School"
         aboutSST.subtitle = "Tap to learn more about SST "
@@ -81,7 +82,6 @@ class MainViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

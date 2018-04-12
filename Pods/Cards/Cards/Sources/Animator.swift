@@ -61,7 +61,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
                 self.card.delegate?.cardIsHidingDetail?(card: self.card)
                 
             }) { _ in UIView.animate(withDuration: self.velocity/2, delay: 0, options: .curveEaseOut, animations: {
-                    
+                
                 detailVC.layout(self.card.originalFrame, isPresenting: false)
                 self.card.delegate?.cardIsHidingDetail?(card: self.card)
                 })
