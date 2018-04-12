@@ -15,22 +15,29 @@ class MainViewController: UIViewController {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet var comingnext: CardHighlight!
     @IBOutlet var aboutSST: CardPlayer!
+    @IBOutlet var curriculum: CardHighlight!
+    @IBOutlet var map: CardHighlight!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Coming Next
         
         comingnext.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
         comingnext.icon = UIImage(named: "ssticon")
         comingnext.title = "Coming up\nnext"
-        comingnext.itemTitle = "Starting soon:"
-        comingnext.itemSubtitle = "Tap to enlarge"
+        comingnext.itemTitle = "Activities that are starting soon:"
+        comingnext.itemSubtitle = "Tap the card to enlarge"
         comingnext.textColor = UIColor.white
         
         comingnext.hasParallax = true
         
-        let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "nextVC")
+        let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "comingnextVC")
         comingnext.shouldPresent(comingnextVC, from: self, fullscreen: false)
+        
+        // About SST
         
         aboutSST.textColor = UIColor.black
         aboutSST.videoSource = URL(fileURLWithPath: Bundle.main.path(forResource: "video", ofType:"mp4")!)
@@ -51,21 +58,31 @@ class MainViewController: UIViewController {
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
         
+        // Curriculum
+        
+        curriculum.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
+        curriculum.icon = UIImage(named: "ssticon")
+        curriculum.title = "Curriculum"
+        curriculum.itemTitle = "Starting soon:"
+        curriculum.itemSubtitle = "Tap the card to enlarge"
+        curriculum.textColor = UIColor.white
+        
+        curriculum.hasParallax = true
+        
+        let curriculumVC = storyboard!.instantiateViewController(withIdentifier: "curriculumVC")
+        curriculum.shouldPresent(curriculumVC, from: self, fullscreen: false)
+        
+        /*
         let instructionView = MessageView.viewFromNib(layout: .cardView)
         SwiftMessages.defaultConfig.presentationStyle = .top
         SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
-        
         instructionView.configureTheme(.error)
         instructionView.configureDropShadow()
-        
         let iconText = ["🤔", "😳", "🙄", "😶"].sm_random()!
-        
         instructionView.configureContent(title: "Warning", body: "Consider yourself warned.", iconText: iconText)
-        
         instructionView.button?.isHidden = true
-        
         SwiftMessages.show(view: instructionView)
-        
+        */
     }
     
     override func viewDidAppear(_ animated: Bool) {
