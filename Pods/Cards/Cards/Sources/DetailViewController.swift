@@ -66,8 +66,9 @@ internal class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         scrollView.addSubview(card.backgroundIV)
         self.delegate?.cardWillShowDetailView?(card: self.card)
+        scrollView.bounces = false
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         
         originalFrame = scrollView.frame
