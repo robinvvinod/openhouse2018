@@ -18,10 +18,23 @@ class MainViewController: UIViewController {
     @IBOutlet var curriculum: CardHighlight!
     @IBOutlet var map: CardHighlight!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if !launchedBefore {
+            
+            let instructionView = MessageView.viewFromNib(layout: .centeredView)
+            SwiftMessages.defaultConfig.presentationStyle = .center
+            SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
+            instructionView.configureTheme(.success)
+            instructionView.configureDropShadow()
+            instructionView.configureContent(title: "Welcome to SST!", body: "If you are having any problems using the app, please approach one of the Student Councillors for help.")
+            instructionView.button?.isHidden = true
+            SwiftMessages.show(view: instructionView)
+            
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        }
         
         // Coming Next
         
@@ -83,17 +96,6 @@ class MainViewController: UIViewController {
         let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
         map.shouldPresent(mapVC, from: self, fullscreen: false)
         
-        /*
-        let instructionView = MessageView.viewFromNib(layout: .cardView)
-        SwiftMessages.defaultConfig.presentationStyle = .top
-        SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
-        instructionView.configureTheme(.error)
-        instructionView.configureDropShadow()
-        let iconText = ["🤔", "😳", "🙄", "😶"].sm_random()!
-        instructionView.configureContent(title: "Warning", body: "Consider yourself warned.", iconText: iconText)
-        instructionView.button?.isHidden = true
-        SwiftMessages.show(view: instructionView)
-        */
     }
     
     override func viewDidAppear(_ animated: Bool) {
