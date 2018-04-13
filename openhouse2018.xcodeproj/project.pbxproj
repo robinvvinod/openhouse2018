@@ -14,6 +14,7 @@
 		2E886707200475D20090BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E886705200475D20090BCAF /* LaunchScreen.storyboard */; };
 		2E886712200475D20090BCAF /* openhouse2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E886711200475D20090BCAF /* openhouse2018Tests.swift */; };
 		2E88671D200475D20090BCAF /* openhouse2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88671C200475D20090BCAF /* openhouse2018UITests.swift */; };
+		2E95E79020807C7100D6801E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95E78F20807C7100D6801E /* MapViewController.swift */; };
 		2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA40B592004F1B5008364A8 /* MainViewController.swift */; };
 		2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */; };
 		2EF4F44A207F92000037CB7C /* ComingNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F449207F92000037CB7C /* ComingNextViewController.swift */; };
@@ -54,6 +55,7 @@
 		2E886718200475D20090BCAF /* openhouse2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openhouse2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E88671C200475D20090BCAF /* openhouse2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openhouse2018UITests.swift; sourceTree = "<group>"; };
 		2E88671E200475D30090BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E95E78F20807C7100D6801E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2EA40B592004F1B5008364A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2ED66DBB203672BC540BBF92 /* Pods_openhouse2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSSTViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */,
 				2EF4F449207F92000037CB7C /* ComingNextViewController.swift */,
 				2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */,
+				2E95E78F20807C7100D6801E /* MapViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
 				2E886703200475D20090BCAF /* Assets.xcassets */,
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
@@ -476,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF4F44A207F92000037CB7C /* ComingNextViewController.swift in Sources */,
+				2E95E79020807C7100D6801E /* MapViewController.swift in Sources */,
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
 				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
