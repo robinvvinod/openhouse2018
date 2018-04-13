@@ -60,11 +60,11 @@ class MainViewController: UIViewController {
         
         // Curriculum
         
-        curriculum.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
-        curriculum.icon = UIImage(named: "ssticon")
+        curriculum.backgroundImage = UIImage(named: "currBg")
+        //curriculum.icon = UIImage(named: "curriculumIcon")
         curriculum.title = "Curriculum"
-        curriculum.itemTitle = "Starting soon:"
-        curriculum.itemSubtitle = "Tap the card to enlarge"
+        curriculum.itemTitle = "View more about the SST Curriculum"
+        curriculum.itemSubtitle = ""
         curriculum.textColor = UIColor.white
         
         curriculum.hasParallax = true
@@ -74,11 +74,11 @@ class MainViewController: UIViewController {
         
         // Map
         
-        map.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
-        map.icon = UIImage(named: "ssticon")
-        map.title = "Curriculum"
-        map.itemTitle = "Starting soon:"
-        map.itemSubtitle = "Tap the card to enlarge"
+        map.backgroundImage = UIImage(named: "mapBg")
+        //map.icon = UIImage(named: "mapIcon")
+        map.title = "Map"
+        map.itemTitle = "Navigate around \nthe school"
+        map.itemSubtitle = ""
         map.textColor = UIColor.white
         
         map.hasParallax = true
