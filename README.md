@@ -1,7 +1,8 @@
 # Open House 2018
 
-## Robin Vinod © 2018
 - - - -
+
+### Robin Vinod and Eugene Long © 2018
 
 ### Synopsis
 * The official app for the SST Open House 2018.
@@ -18,11 +19,13 @@
 ### Future Work
 - [x] Card design
 - [ ] Coming up next
-- [ ] QR code scanning
+- [ ] Curriculum Info
+- [ ] Map View
+- [ ] Booth Codes
 
 - - - -
 
 ### Acknowledgements
 
 * Card interface sourced from [GitHub - PaoloCuscela/Cards: Awesome iOS 11 appstore cards in swift 4.](https://github.com/PaoloCuscela/Cards)
-* 
+*
