@@ -72,6 +72,20 @@ class MainViewController: UIViewController {
         let curriculumVC = storyboard!.instantiateViewController(withIdentifier: "curriculumVC")
         curriculum.shouldPresent(curriculumVC, from: self, fullscreen: false)
         
+        // Map
+        
+        map.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
+        map.icon = UIImage(named: "ssticon")
+        map.title = "Curriculum"
+        map.itemTitle = "Starting soon:"
+        map.itemSubtitle = "Tap the card to enlarge"
+        map.textColor = UIColor.white
+        
+        map.hasParallax = true
+        
+        let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
+        map.shouldPresent(mapVC, from: self, fullscreen: false)
+        
         /*
         let instructionView = MessageView.viewFromNib(layout: .cardView)
         SwiftMessages.defaultConfig.presentationStyle = .top
