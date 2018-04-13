@@ -25,11 +25,10 @@ class MainViewController: UIViewController {
         
         // Coming Next
         
-        comingnext.backgroundColor = UIColor(red: 127/255, green: 219/255, blue: 255/255, alpha: 1)
-        comingnext.icon = UIImage(named: "ssticon")
-        comingnext.title = "Coming up\nnext"
+        comingnext.backgroundImage = UIImage(named: "comingupnextBg")
+        comingnext.title = "Coming up next"
         comingnext.itemTitle = "Activities that are starting soon:"
-        comingnext.itemSubtitle = "Tap the card to enlarge"
+        comingnext.itemSubtitle = ""
         comingnext.textColor = UIColor.white
         
         comingnext.hasParallax = true
@@ -61,7 +60,6 @@ class MainViewController: UIViewController {
         // Curriculum
         
         curriculum.backgroundImage = UIImage(named: "currBg")
-        //curriculum.icon = UIImage(named: "curriculumIcon")
         curriculum.title = "Curriculum"
         curriculum.itemTitle = "View more about the SST Curriculum"
         curriculum.itemSubtitle = ""
@@ -75,7 +73,6 @@ class MainViewController: UIViewController {
         // Map
         
         map.backgroundImage = UIImage(named: "mapBg")
-        //map.icon = UIImage(named: "mapIcon")
         map.title = "Map"
         map.itemTitle = "Navigate around \nthe school"
         map.itemSubtitle = ""
