@@ -72,10 +72,7 @@ internal class DetailViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         originalFrame = scrollView.frame
-        
-        if isFullscreen {
-            view.addSubview(xButton)
-        }
+        view.addSubview(xButton)
         
         view.insertSubview(snap, belowSubview: blurView)
         
@@ -130,7 +127,6 @@ internal class DetailViewController: UIViewController {
            
             scrollView.frame = view.bounds
             scrollView.frame.origin.y = 0
-            print(scrollView.frame)
             
         } else {
             scrollView.frame.size = CGSize(width: LayoutHelper.XScreen(85), height: LayoutHelper.YScreen(100) - 20)
@@ -167,7 +163,7 @@ extension DetailViewController: UIScrollViewDelegate {
         let origin = originalFrame.origin.y
         let currentOrigin = originalFrame.origin.y
         
-        xButton.alpha = y - (card.backgroundIV.bounds.height * 0.6)
+        //xButton.alpha = y - (card.backgroundIV.bounds.height * 0.6)
         
         if (y<0  || currentOrigin > origin) {
             scrollView.frame.origin.y -= y/2
