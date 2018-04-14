@@ -36,6 +36,10 @@ class MainViewController: UIViewController {
             UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
         // Coming Next
         
         comingnext.backgroundImage = UIImage(named: "comingupnextBg")
@@ -47,7 +51,7 @@ class MainViewController: UIViewController {
         comingnext.hasParallax = true
         
         let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "comingnextVC")
-        comingnext.shouldPresent(comingnextVC, from: self, fullscreen: false)
+        comingnext.shouldPresent(comingnextVC, from: self, fullscreen: true)
         
         // About SST
         
@@ -68,7 +72,7 @@ class MainViewController: UIViewController {
         aboutSST.hasParallax = true
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
-        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: false)
+        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
         
         // Curriculum
         
@@ -81,7 +85,7 @@ class MainViewController: UIViewController {
         curriculum.hasParallax = true
         
         let curriculumVC = storyboard!.instantiateViewController(withIdentifier: "curriculumVC")
-        curriculum.shouldPresent(curriculumVC, from: self, fullscreen: false)
+        curriculum.shouldPresent(curriculumVC, from: self, fullscreen: true)
         
         // Map
         
@@ -94,8 +98,7 @@ class MainViewController: UIViewController {
         map.hasParallax = true
         
         let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
-        map.shouldPresent(mapVC, from: self, fullscreen: false)
-        
+        map.shouldPresent(mapVC, from: self, fullscreen: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {

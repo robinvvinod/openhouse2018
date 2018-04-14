@@ -45,7 +45,10 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
                 
                 detailVC.blurView.alpha = 0
                 detailVC.snap.alpha = 0
-                self.card.backgroundIV.layer.cornerRadius = self.card.cardRadius
+                self.card.backgroundIV.layer.cornerRadius = 20
+                detailVC.blurView.layer.cornerRadius = 20
+                detailVC.detailView?.layer.cornerRadius = 20
+                detailVC.scrollView.layer.cornerRadius = 20
                 
             }, completion: { _ in
                 
@@ -87,6 +90,9 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
             detailVC.blurView.alpha = 1
             detailVC.snap.alpha = 1
             self.card.backgroundIV.layer.cornerRadius = 0
+            detailVC.blurView.layer.cornerRadius = 0
+            detailVC.detailView?.layer.cornerRadius = 0
+            detailVC.scrollView.layer.cornerRadius = 0
             
         }, completion: { _ in
             
