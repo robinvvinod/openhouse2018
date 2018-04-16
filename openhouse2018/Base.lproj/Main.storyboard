@@ -218,11 +218,51 @@
                     </view>
                     <connections>
                         <outlet property="curriculumCollectionView" destination="XSU-Ko-2sp" id="Piy-Zn-6ls"/>
+                        <segue destination="xMG-Ls-1Q1" kind="presentation" identifier="showWebView" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="DGS-3c-66A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cap-XJ-jQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2229.5999999999999" y="31.934032983508249"/>
+        </scene>
+        <!--Web ViewController-->
+        <scene sceneID="Ewm-XM-pY8">
+            <objects>
+                <viewController title="Web ViewController" id="xMG-Ls-1Q1" customClass="WebViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bVD-Pt-Ftp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCu-Lc-iT4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3rg-bF-3lU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="xMG-Ls-1Q1" eventType="touchUpInside" id="wOv-Cd-0qG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LUI-8u-tlY" firstAttribute="trailing" secondItem="vCu-Lc-iT4" secondAttribute="trailing" id="0aT-lU-4y6"/>
+                            <constraint firstItem="vCu-Lc-iT4" firstAttribute="leading" secondItem="LUI-8u-tlY" secondAttribute="leading" id="ETH-3T-OPa"/>
+                            <constraint firstItem="vCu-Lc-iT4" firstAttribute="top" secondItem="LUI-8u-tlY" secondAttribute="top" id="Rvb-VZ-Qcj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LUI-8u-tlY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="vCu-Lc-iT4" id="sFq-SC-XM5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEu-q7-oDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="735"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="PUk-yI-rw4">
