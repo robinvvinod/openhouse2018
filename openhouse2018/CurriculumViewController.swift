@@ -19,6 +19,10 @@ class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICo
 				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/science",
 				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/sports-and-wellness"]
 	
+	var url = String()
+	
+	@IBOutlet var curriculumCollectionView: UICollectionView!
+	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return subjects.count
 	}
@@ -34,18 +38,17 @@ class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICo
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		UIApplication.shared.open(URL(string: links[indexPath.item])!, options: [:], completionHandler: nil)
+		url = links[indexPath.item]
+		performSegue(withIdentifier: "showWebView", sender: self)
 	}
 	
-
-	@IBOutlet weak var curriculumCollectionView: UICollectionView!
 	
 	override func viewDidLoad() {
-		curriculumCollectionView.delegate = self
-		curriculumCollectionView.dataSource = self
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		curriculumCollectionView.delegate = self
+		curriculumCollectionView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,15 +57,19 @@ class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
 
-    /*
+	
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "showWebView" {
+			let vc = segue.destination as! WebViewController
+			vc.url = url
+		}
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+	
 
 }
 

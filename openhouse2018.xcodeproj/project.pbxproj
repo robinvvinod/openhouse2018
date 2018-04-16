@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DDE54C32084D324009661DF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDE54C22084D324009661DF /* WebViewController.swift */; };
 		2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E10DEA3206CE35F00F979C7 /* video.mp4 */; };
 		2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8866FC200475D20090BCAF /* AppDelegate.swift */; };
 		2E886702200475D20090BCAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E886700200475D20090BCAF /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DDE54C22084D324009661DF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		2E10DEA3206CE35F00F979C7 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		2E8866F9200475D20090BCAF /* openhouse2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openhouse2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8866FC200475D20090BCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				2EF4F449207F92000037CB7C /* ComingNextViewController.swift */,
 				2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */,
 				2E95E78F20807C7100D6801E /* MapViewController.swift */,
+				1DDE54C22084D324009661DF /* WebViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
 				2E886703200475D20090BCAF /* Assets.xcassets */,
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
@@ -482,6 +485,7 @@
 				2E95E79020807C7100D6801E /* MapViewController.swift in Sources */,
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
 				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
+				1DDE54C32084D324009661DF /* WebViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
 				2EF4F44C207F92FE0037CB7C /* CurriculumViewController.swift in Sources */,
 			);
