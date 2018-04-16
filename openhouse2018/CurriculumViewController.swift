@@ -8,9 +8,41 @@
 
 import UIKit
 
-class CurriculumViewController: UIViewController {
+class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+	
+	var subjects = ["English Language", "Mother Tongue Languages", "Mathematics", "Integrated Humanities", "Science", "Sports and Wellness"]
+	var images = [#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon")]
+	var links = ["http://www.sst.edu.sg/learning-sst/academic-course-of-study/english-language",
+				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/mother-tongue-languages",
+				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/mathematics",
+				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/integrated-humanities",
+				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/science",
+				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/sports-and-wellness"]
+	
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return subjects.count
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "curriculumCell", for: indexPath) as! CurriculumCollectionViewCell
+		
+		// Configure the cell
+		cell.curriculumFlavourImage.image = images[indexPath.item]
+		cell.curriculumText.text = subjects[indexPath.item]
+		
+		return cell
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		UIApplication.shared.open(URL(string: links[indexPath.item])!, options: [:], completionHandler: nil)
+	}
+	
 
-    override func viewDidLoad() {
+	@IBOutlet weak var curriculumCollectionView: UICollectionView!
+	
+	override func viewDidLoad() {
+		curriculumCollectionView.delegate = self
+		curriculumCollectionView.dataSource = self
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -32,4 +64,9 @@ class CurriculumViewController: UIViewController {
     }
     */
 
+}
+
+class CurriculumCollectionViewCell: UICollectionViewCell {
+	@IBOutlet weak var curriculumFlavourImage: UIImageView!
+	@IBOutlet weak var curriculumText: UILabel!
 }
