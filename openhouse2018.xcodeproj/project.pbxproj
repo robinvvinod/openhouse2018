@@ -129,18 +129,18 @@
 			isa = PBXGroup;
 			children = (
 				2E8866FC200475D20090BCAF /* AppDelegate.swift */,
+				2E2E4DBB20859EB600E13691 /* Reachability.swift */,
 				2EA40B592004F1B5008364A8 /* MainViewController.swift */,
 				2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */,
 				2EF4F449207F92000037CB7C /* ComingNextViewController.swift */,
 				2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */,
 				2E95E78F20807C7100D6801E /* MapViewController.swift */,
 				1DDE54C22084D324009661DF /* WebViewController.swift */,
-				2E2E4DBB20859EB600E13691 /* Reachability.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
-				2E886703200475D20090BCAF /* Assets.xcassets */,
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
+				2E886703200475D20090BCAF /* Assets.xcassets */,
 				2E886708200475D20090BCAF /* Info.plist */,
-				2E10DEA3206CE35F00F979C7 /* video.mp4 */,
+				2EA027782085A2B0002BEB67 /* Assets */,
 			);
 			path = openhouse2018;
 			sourceTree = "<group>";
@@ -161,6 +161,14 @@
 				2E88671E200475D30090BCAF /* Info.plist */,
 			);
 			path = openhouse2018UITests;
+			sourceTree = "<group>";
+		};
+		2EA027782085A2B0002BEB67 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2E10DEA3206CE35F00F979C7 /* video.mp4 */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		5DF25E37310597FED817A385 /* Pods */ = {
@@ -669,7 +677,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = openhouse2018/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -690,7 +698,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = openhouse2018/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
