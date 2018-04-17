@@ -130,11 +130,11 @@ class MainViewController: UIViewController {
         gradientView.layer.insertSublayer(gradient, at: 0)
         
     }
-    /*
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    */
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
