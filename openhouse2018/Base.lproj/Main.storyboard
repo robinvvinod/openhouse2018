@@ -104,28 +104,9 @@
                     <view key="view" contentMode="scaleToFill" id="PAO-Ag-drY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rus-wI-ERu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Rus-wI-ERu" firstAttribute="leading" secondItem="3fD-xW-LFZ" secondAttribute="leading" id="KU9-AO-l8Y"/>
-                            <constraint firstItem="Rus-wI-ERu" firstAttribute="trailing" secondItem="3fD-xW-LFZ" secondAttribute="trailing" id="ZOE-hx-ac6"/>
-                            <constraint firstItem="Rus-wI-ERu" firstAttribute="top" secondItem="PAO-Ag-drY" secondAttribute="top" id="fAi-sb-ush"/>
-                            <constraint firstItem="Rus-wI-ERu" firstAttribute="bottom" secondItem="3fD-xW-LFZ" secondAttribute="bottom" id="gUe-6e-PJ7"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3fD-xW-LFZ"/>
                     </view>
-                    <connections>
-                        <outlet property="webview" destination="Rus-wI-ERu" id="JCO-Tr-X1j"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8D6-wf-MZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
