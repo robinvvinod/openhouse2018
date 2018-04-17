@@ -21,6 +21,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Display instructions if first launch
+        
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if !launchedBefore {
             
@@ -32,9 +34,26 @@ class MainViewController: UIViewController {
             instructionView.configureContent(title: "Welcome to SST!", body: "If you are having any problems using the app, please approach one of the Student Councillors for help.")
             instructionView.button?.isHidden = true
             SwiftMessages.show(view: instructionView)
+            SwiftMessages.pauseBetweenMessages = 1.0
             
             UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
+        
+        // Check for internet access
+        
+        if Reachability.isConnectedToNetwork() == false {
+            NSLog("No internet")
+            SwiftMessages.defaultConfig.presentationStyle = .top
+            SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
+            let internetAlert = MessageView.viewFromNib(layout: .cardView)
+            internetAlert.configureTheme(.error)
+            internetAlert.configureDropShadow()
+            internetAlert.button?.isHidden = true
+            internetAlert.configureContent(title: "No Internet", body: "Some of the features may not work without an internet connection")
+            SwiftMessages.show(view: internetAlert)
+            
+        }
+        
         
     }
     
@@ -111,11 +130,11 @@ class MainViewController: UIViewController {
         gradientView.layer.insertSublayer(gradient, at: 0)
         
     }
-    
+    /*
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
+    */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
