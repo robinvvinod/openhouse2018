@@ -101,7 +101,7 @@
         <!--AboutSST View Controller-->
         <scene sceneID="c0X-b9-2Sd">
             <objects>
-                <viewController storyboardIdentifier="aboutSSTVC" id="Lsg-ig-ueZ" customClass="AboutSSTViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aboutSSTVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lsg-ig-ueZ" customClass="AboutSSTViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PAO-Ag-drY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,14 +198,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-DO-7hJ">
-                                <rect key="frame" x="164" y="328" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="back:" destination="3T9-wR-lTT" eventType="touchUpInside" id="wdE-VS-MKj"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -267,7 +259,7 @@
         <!--Map View Controller-->
         <scene sceneID="PUk-yI-rw4">
             <objects>
-                <viewController storyboardIdentifier="mapVC" id="j7X-DT-068" customClass="MapViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j7X-DT-068" customClass="MapViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ij1-8C-ffS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,7 +274,7 @@
         <!--Coming Next View Controller-->
         <scene sceneID="fAe-JJ-9Uv">
             <objects>
-                <viewController storyboardIdentifier="comingnextVC" id="tbv-ID-qRl" customClass="ComingNextViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="comingnextVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tbv-ID-qRl" customClass="ComingNextViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sbe-i6-6u6"/>
                         <viewControllerLayoutGuide type="bottom" id="cUJ-HW-7PV"/>

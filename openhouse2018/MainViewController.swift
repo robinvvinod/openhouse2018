@@ -90,7 +90,7 @@ class MainViewController: UIViewController {
         aboutSST.subtitleSize = 16
         aboutSST.hasParallax = true
         
-        let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutVC")
+        let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
         
         // Curriculum
