@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
         }
         
         // Check for internet access
-        
+    
         if Reachability.isConnectedToNetwork() == false {
             NSLog("No internet")
             SwiftMessages.defaultConfig.presentationStyle = .top
@@ -90,7 +90,7 @@ class MainViewController: UIViewController {
         aboutSST.subtitleSize = 16
         aboutSST.hasParallax = true
         
-        let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
+        let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutVC")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
         
         // Curriculum
