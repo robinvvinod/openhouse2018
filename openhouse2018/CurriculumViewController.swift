@@ -9,22 +9,7 @@
 import UIKit
 
 class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    func topMostController() -> UIViewController {
-        var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
-        while (topController.presentedViewController != nil) {
-            topController = topController.presentedViewController!
-        }
-        return topController
-    }
-    
-    @IBAction func back(_ sender: Any) {
-        let topVC = topMostController()
-        let vcToPresent = self.storyboard!.instantiateViewController(withIdentifier: "mainVC") as! MainViewController
-        topVC.present(vcToPresent, animated: true, completion: nil)
         
-    }
-    
 	var subjects = ["English Language", "Mother Tongue Languages", "Mathematics", "Integrated Humanities", "Science", "Sports and Wellness"]
 	var images = [#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon")]
 	var links = ["http://www.sst.edu.sg/learning-sst/academic-course-of-study/english-language",
