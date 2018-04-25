@@ -29,7 +29,6 @@ import UIKit
 
 @IBDesignable open class Card: UIView, CardDelegate {
     
-    var controller = UIViewController()
     // Storyboard Inspectable vars
     /**
      Color for the card's labels.
@@ -98,8 +97,12 @@ import UIKit
      */
     public func shouldPresent( _ contentViewController: UIViewController?, from superVC: UIViewController?, fullscreen: Bool = false) {
         if let content = contentViewController {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            controller = storyboard.instantiateViewController(withIdentifier: content.restorationIdentifier!)
+            self.superVC = superVC
+            detailVC.addChildViewController(content)
+            detailVC.detailView = content.view
+            detailVC.card = self
+            detailVC.delegate = self.delegate
+            detailVC.isFullscreen = fullscreen
         }
     }
     /**
@@ -194,8 +197,10 @@ import UIKit
     
     @objc func cardTapped() {
         self.delegate?.cardDidTapInside?(card: self)
-        let topVC = topMostController()
-        topVC.present(controller, animated: true, completion: nil)
+        
+        if let vc = superVC {
+            vc.present(self.detailVC, animated: true, completion: nil)
+        } else {resetAnimated()}
     }
 
     

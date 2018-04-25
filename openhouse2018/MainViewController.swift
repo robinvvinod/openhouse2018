@@ -54,11 +54,6 @@ class MainViewController: UIViewController {
             
         }
         
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
         // Coming Next
         
         comingnext.backgroundImage = UIImage(named: "comingupnextBg")
@@ -118,6 +113,7 @@ class MainViewController: UIViewController {
         
         let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
         map.shouldPresent(mapVC, from: self, fullscreen: true)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
