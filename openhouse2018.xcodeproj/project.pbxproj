@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DDE54C32084D324009661DF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDE54C22084D324009661DF /* WebViewController.swift */; };
+		1DB7C6A820918B1900C53FBF /* CurriculumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7C6A720918B1900C53FBF /* CurriculumInfo.swift */; };
 		2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E10DEA3206CE35F00F979C7 /* video.mp4 */; };
 		2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E4DBB20859EB600E13691 /* Reachability.swift */; };
 		2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8866FC200475D20090BCAF /* AppDelegate.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DDE54C22084D324009661DF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		1DB7C6A720918B1900C53FBF /* CurriculumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumInfo.swift; sourceTree = "<group>"; };
 		2E10DEA3206CE35F00F979C7 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		2E2E4DBB20859EB600E13691 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2E8866F9200475D20090BCAF /* openhouse2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openhouse2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DB7C6A620918B0200C53FBF /* Curriculum */ = {
+			isa = PBXGroup;
+			children = (
+				2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */,
+				1DB7C6A720918B1900C53FBF /* CurriculumInfo.swift */,
+			);
+			path = Curriculum;
+			sourceTree = "<group>";
+		};
 		2E8866F0200475D20090BCAF = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +142,8 @@
 				2EA40B592004F1B5008364A8 /* MainViewController.swift */,
 				2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */,
 				2EF4F449207F92000037CB7C /* ComingNextViewController.swift */,
-				2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */,
+				1DB7C6A620918B0200C53FBF /* Curriculum */,
 				2E95E78F20807C7100D6801E /* MapViewController.swift */,
-				1DDE54C22084D324009661DF /* WebViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
 				2E886703200475D20090BCAF /* Assets.xcassets */,
@@ -495,8 +503,8 @@
 				2EF4F44A207F92000037CB7C /* ComingNextViewController.swift in Sources */,
 				2E95E79020807C7100D6801E /* MapViewController.swift in Sources */,
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
+				1DB7C6A820918B1900C53FBF /* CurriculumInfo.swift in Sources */,
 				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
-				1DDE54C32084D324009661DF /* WebViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
 				2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */,
 				2EF4F44C207F92FE0037CB7C /* CurriculumViewController.swift in Sources */,

@@ -9,15 +9,6 @@
 import UIKit
 
 class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-        
-	var subjects = ["English Language", "Mother Tongue Languages", "Mathematics", "Integrated Humanities", "Science", "Sports and Wellness"]
-	var images = [#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon")]
-	var links = ["http://www.sst.edu.sg/learning-sst/academic-course-of-study/english-language",
-				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/mother-tongue-languages",
-				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/mathematics",
-				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/integrated-humanities",
-				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/science",
-				 "http://www.sst.edu.sg/learning-sst/academic-course-of-study/sports-and-wellness"]
 	
 	var url = String()
 	
