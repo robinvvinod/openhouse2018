@@ -36,11 +36,7 @@ class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICo
 		
 		return cell
 	}
-	
-	override func viewDidLayoutSubviews() {
-		self.curriculumCollectionView.collectionViewLayout.invalidateLayout()
-	}
-	
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
 		view.layoutIfNeeded()
