@@ -8,5 +8,14 @@
 
 import UIKit
 
-var subjects = ["English Language", "Mother Tongue Languages", "Mathematics", "Integrated Humanities", "Science", "Sports and Wellness"]
-var images = [#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon"),#imageLiteral(resourceName: "currIcon")]
+struct showcaseSubject {
+	var subject: String
+	var image: UIImage
+	var location: String
+	var timings: [Date]
+}
+
+struct academicSubject {
+	var subject: String
+	var location: String
+}
