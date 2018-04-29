@@ -15,15 +15,21 @@ class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICo
 	@IBOutlet var curriculumCollectionView: UICollectionView!
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return subjects.count
+		return CurriculumSubjectList.count
+	}
+	
+	func numberOfSections(in collectionView: UICollectionView) -> Int {
+		return 3
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "curriculumCell", for: indexPath) as! CurriculumCollectionViewCell
 		
 		// Configure the cell
-		cell.curriculumFlavourImage.image = images[indexPath.item]
-		cell.curriculumText.text = subjects[indexPath.item]
+		let currentSection = CurriculumSubjectList[indexPath.section]
+		let currentSubject = CurriculumSubjectList[indexPath.section].subjects[indexPath.row]
+		cell.curriculumText.text = currentSubject
+		cell.curriculumFlavourImage.image = currentSection.getImage(forSubject: currentSubject)
 		
 		return cell
 	}
