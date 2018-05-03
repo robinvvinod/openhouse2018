@@ -111,7 +111,7 @@ class MainViewController: UIViewController {
         
         map.hasParallax = true
         
-        let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
+        let mapVC = storyboard!.instantiateViewController(withIdentifier: "scheduleVC")
         map.shouldPresent(mapVC, from: self, fullscreen: true)
         
     }
