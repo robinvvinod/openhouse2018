@@ -21,14 +21,24 @@ struct currSubjects {
 		if timings == nil {
 			return nil
 		}
-		var timeString: [String]!
+		var timeStrings : [String]!
+		
 		if (timings?.count)! > 1 {
-			timeString = timings![subjects.index(of: subject)!]
+			timeStrings = timings![subjects.index(of: subject)!]
 		} else {
-			timeString = timings![0]
+			timeStrings = timings![0]
 		}
-		//Convert and check. I've no time so its TBD for now.
-		return nil
+		
+		var nextPossibleTime: String?
+		
+		for timeString in timeStrings {
+			let startingHour = Int(timeString.prefix(2))
+			if Calendar.current.component(.hour, from: Date()) < startingHour! {
+				nextPossibleTime = timeString
+				break
+			}
+		}
+		return nextPossibleTime ?? nil
 	}
 	
 	func getImage(forSubject subject: String) -> UIImage {
