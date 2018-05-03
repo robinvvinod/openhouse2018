@@ -71,6 +71,8 @@ internal class DetailViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        scrollView.contentOffset.y = (detailView?.frame.height)!
+        scrollView.isScrollEnabled = false
         originalFrame = scrollView.frame
         view.addSubview(xButton)
         
@@ -85,7 +87,6 @@ internal class DetailViewController: UIViewController {
                                   height: detail.frame.height)
              
             scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: detail.frame.maxY)
-            
             
             xButton.frame = CGRect (x: scrollView.frame.maxX - 20 - 40,
                                     y: scrollView.frame.minY + 20,
