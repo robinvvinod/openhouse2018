@@ -71,7 +71,6 @@ internal class DetailViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        scrollView.contentOffset.y = (detailView?.frame.height)!
         scrollView.isScrollEnabled = false
         originalFrame = scrollView.frame
         view.addSubview(xButton)
@@ -139,7 +138,7 @@ internal class DetailViewController: UIViewController {
         
         card.backgroundIV.frame.origin = scrollView.bounds.origin
         card.backgroundIV.frame.size = CGSize( width: scrollView.bounds.width,
-                                            height: card.backgroundIV.bounds.height)
+                                            height: 0)
         card.layout(animating: isAnimating)
     
     }
