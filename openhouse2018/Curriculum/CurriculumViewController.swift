@@ -8,44 +8,80 @@
 
 import UIKit
 
-class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CurriculumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
-	var url = String()
-	
-	@IBOutlet var curriculumCollectionView: UICollectionView!
-	
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return CurriculumSubjectList.count
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		if detailViewCellIndex != nil && detailViewCellIndex?.section == section {
+			return data[section].count+1
+		}
+		return data[section].count
 	}
 	
-	func numberOfSections(in collectionView: UICollectionView) -> Int {
-		return 3
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "curriculumCell", for: indexPath) as! CurriculumCollectionViewCell
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
-		// Configure the cell
-		let currentSection = CurriculumSubjectList[indexPath.section]
-		let currentSubject = CurriculumSubjectList[indexPath.section].subjects[indexPath.row]
-		cell.curriculumText.text = currentSubject
-		cell.curriculumFlavourImage.image = currentSection.getImage(forSubject: currentSubject)
+		if indexPath == detailViewCellIndex {
+			let cell = tableView.dequeueReusableCell(withIdentifier: "detailViewCell", for: indexPath)
+			
+			// Configure the cell...
+			let currentSubject = data[indexPath.section][indexPath.row-1]
+			cell.textLabel?.text = currentSubject.location
+			let nextTime = currentSubject.nextTiming()
+			if nextTime != nil {
+				cell.detailTextLabel?.text = nextTime![0] + "(" + nextTime![1] + ")"
+			} else {
+				cell.detailTextLabel?.text = "Any Time"
+			}
+			
+			return cell
+		}
+		
+		let cell = tableView.dequeueReusableCell(withIdentifier: "subjectViewCell", for: indexPath)
+		
+		// Configure the cell...
+		if detailViewCellAffects(forCellAt: indexPath) {
+			cell.textLabel?.text = data[indexPath.section][indexPath.row-1].subject
+		} else {
+			cell.textLabel?.text = data[indexPath.section][indexPath.row].subject
+		}
 		
 		return cell
 	}
+	
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return data.count
+	}
+	
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		return ["Subject Showcases", "CCA Showcase", "Academic Showcases"][section]
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if indexPath != detailViewCellIndex {
+			if detailViewCellAffects(forCellAt: indexPath) {
+				detailViewCellIndex = IndexPath(row: indexPath.row, section: indexPath.section)
+			} else {
+				detailViewCellIndex = IndexPath(row: indexPath.row+1, section: indexPath.section)
+			}
+		} else {
+			detailViewCellIndex = nil
+		}
+		
+		tableView.reloadData()
+	}
+	
+	@IBOutlet weak var curriculumTableView: UITableView!
+	
+	var detailViewCellIndex: IndexPath?
     
 	override func viewDidLoad() {
         super.viewDidLoad()
 		view.layoutIfNeeded()
 
         // Do any additional setup after loading the view.
-		curriculumCollectionView.delegate = self
-		curriculumCollectionView.dataSource = self
+		curriculumTableView.delegate = self
+		curriculumTableView.dataSource = self
+		detailViewCellIndex = nil
     }
-	
-	override func viewWillAppear(_ animated: Bool) {
-		self.curriculumCollectionView.reloadData()
-	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,13 +93,10 @@ class CurriculumViewController: UIViewController, UICollectionViewDelegate, UICo
 		
     }
 	
-	
+	func detailViewCellAffects(forCellAt indexPath: IndexPath) -> Bool {
+		return detailViewCellIndex != nil && detailViewCellIndex!.section == indexPath.section && detailViewCellIndex!.row < indexPath.row
+	}
 
-}
-
-class CurriculumCollectionViewCell: UICollectionViewCell {
-	@IBOutlet weak var curriculumFlavourImage: UIImageView!
-	@IBOutlet weak var curriculumText: UILabel!
 }
 
 class ShadowView: UIView {
