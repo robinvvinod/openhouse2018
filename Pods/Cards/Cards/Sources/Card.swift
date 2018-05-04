@@ -217,7 +217,7 @@ import UIKit
     }
     
     func goParallax() {
-        let amount = 20
+        let amount = 10
         
         let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
         horizontal.minimumRelativeValue = -amount
