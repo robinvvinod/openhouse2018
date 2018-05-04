@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     @IBOutlet var comingnext: CardHighlight!
     @IBOutlet var aboutSST: CardPlayer!
     @IBOutlet var curriculum: CardHighlight!
+    @IBOutlet var schedule: CardHighlight!
     @IBOutlet var map: CardHighlight!
     
     override func viewDidLoad() {
@@ -54,19 +55,6 @@ class MainViewController: UIViewController {
             
         }
         
-        // Coming Next
-        
-        comingnext.backgroundImage = UIImage(named: "comingupnextBg")
-        comingnext.title = "Coming up next"
-        comingnext.itemTitle = "Activities that are starting soon:"
-        comingnext.itemSubtitle = ""
-        comingnext.textColor = UIColor.white
-        
-        comingnext.hasParallax = true
-        
-        let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "comingnextVC")
-        comingnext.shouldPresent(comingnextVC, from: self, fullscreen: true)
-        
         // About SST
         
         aboutSST.textColor = UIColor.black
@@ -88,6 +76,19 @@ class MainViewController: UIViewController {
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
         
+        // Coming Next
+        
+        comingnext.backgroundImage = UIImage(named: "comingupnextBg")
+        comingnext.title = "Coming up next"
+        comingnext.itemTitle = "Activities that are starting soon:"
+        comingnext.itemSubtitle = ""
+        comingnext.textColor = UIColor.white
+        
+        comingnext.hasParallax = true
+        
+        let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "comingnextVC")
+        comingnext.shouldPresent(comingnextVC, from: self, fullscreen: true)
+        
         // Curriculum
         
         curriculum.backgroundImage = UIImage(named: "currBg")
@@ -101,6 +102,19 @@ class MainViewController: UIViewController {
         let curriculumVC = storyboard!.instantiateViewController(withIdentifier: "curriculumVC")
         curriculum.shouldPresent(curriculumVC, from: self, fullscreen: true)
         
+        // Schedule
+        
+        schedule.backgroundImage = UIImage(named: "mapBg")
+        schedule.title = "Schedule"
+        schedule.itemTitle = "See the activities \n going on"
+        schedule.itemSubtitle = ""
+        schedule.textColor = UIColor.white
+        
+        schedule.hasParallax = true
+        
+        let scheduleVC = storyboard!.instantiateViewController(withIdentifier: "scheduleVC")
+        schedule.shouldPresent(scheduleVC, from: self, fullscreen: true)
+        
         // Map
         
         map.backgroundImage = UIImage(named: "mapBg")
@@ -111,7 +125,7 @@ class MainViewController: UIViewController {
         
         map.hasParallax = true
         
-        let mapVC = storyboard!.instantiateViewController(withIdentifier: "scheduleVC")
+        let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
         map.shouldPresent(mapVC, from: self, fullscreen: true)
         
     }
