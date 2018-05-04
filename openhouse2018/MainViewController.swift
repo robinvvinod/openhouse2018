@@ -71,7 +71,7 @@ class MainViewController: UIViewController {
         aboutSST.subtitle = "Tap to learn more about SST "
         aboutSST.category = "About SST"
         aboutSST.subtitleSize = 16
-        aboutSST.hasParallax = true
+        aboutSST.hasParallax = false
         
         let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
         aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
@@ -84,7 +84,7 @@ class MainViewController: UIViewController {
         comingnext.itemSubtitle = ""
         comingnext.textColor = UIColor.white
         
-        comingnext.hasParallax = true
+        comingnext.hasParallax = false
         
         let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "comingnextVC")
         comingnext.shouldPresent(comingnextVC, from: self, fullscreen: true)
@@ -97,7 +97,7 @@ class MainViewController: UIViewController {
         curriculum.itemSubtitle = ""
         curriculum.textColor = UIColor.white
         
-        curriculum.hasParallax = true
+        curriculum.hasParallax = false
         
         let curriculumVC = storyboard!.instantiateViewController(withIdentifier: "curriculumVC")
         curriculum.shouldPresent(curriculumVC, from: self, fullscreen: true)
@@ -110,7 +110,7 @@ class MainViewController: UIViewController {
         schedule.itemSubtitle = ""
         schedule.textColor = UIColor.white
         
-        schedule.hasParallax = true
+        schedule.hasParallax = false
         
         let scheduleVC = storyboard!.instantiateViewController(withIdentifier: "scheduleVC")
         schedule.shouldPresent(scheduleVC, from: self, fullscreen: true)
@@ -123,7 +123,7 @@ class MainViewController: UIViewController {
         map.itemSubtitle = ""
         map.textColor = UIColor.white
         
-        map.hasParallax = true
+        map.hasParallax = false
         
         let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
         map.shouldPresent(mapVC, from: self, fullscreen: true)
@@ -132,12 +132,12 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        let gradient = CAGradientLayer()
+        //let gradient = CAGradientLayer()
         
-        gradient.frame = gradientView.bounds
-        gradient.colors = [UIColor(red: 236/255, green: 247/255, blue: 231/255, alpha: 1).cgColor, UIColor(red: 208/255, green: 156/255, blue: 215/255, alpha: 1).cgColor]
+        //gradient.frame = gradientView.bounds
+        //gradient.colors = [UIColor(red: 236/255, green: 247/255, blue: 231/255, alpha: 1).cgColor, UIColor(red: 208/255, green: 156/255, blue: 215/255, alpha: 1).cgColor]
         
-        gradientView.layer.insertSublayer(gradient, at: 0)
+        //gradientView.layer.insertSublayer(gradient, at: 0)
         
     }
     

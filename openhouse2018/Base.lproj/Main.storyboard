@@ -16,22 +16,22 @@
             <objects>
                 <viewController storyboardIdentifier="mainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wFM-4L-q0z" customClass="MainViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SFE-ZR-sJi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbM-A2-O8E">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1950"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-d2-0LV">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1580"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1950"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardPlayer" customModule="Cards">
-                                                <rect key="frame" x="37" y="170" width="300" height="280"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardPlayer" customModule="Cards">
+                                                <rect key="frame" x="35" y="170" width="300" height="280"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardHighlight" customModule="Cards">
-                                                <rect key="frame" x="37" y="480" width="300" height="340"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardHighlight" customModule="Cards">
+                                                <rect key="frame" x="35" y="480" width="300" height="340"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
@@ -49,18 +49,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-Rt-LjU" customClass="CardHighlight" customModule="Cards">
-                                                <rect key="frame" x="37" y="850" width="300" height="340"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-Rt-LjU" customClass="CardHighlight" customModule="Cards">
+                                                <rect key="frame" x="35" y="850" width="300" height="340"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBE-Sq-hA2" customClass="CardHighlight" customModule="Cards">
-                                                <rect key="frame" x="37" y="1220" width="300" height="340"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBE-Sq-hA2" customClass="CardHighlight" customModule="Cards">
+                                                <rect key="frame" x="35" y="1220" width="300" height="340"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AzF-2f-8BG" customClass="CardHighlight" customModule="Cards">
-                                                <rect key="frame" x="37" y="1590" width="300" height="340"/>
+                                                <rect key="frame" x="35" y="1590" width="300" height="340"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
@@ -241,7 +241,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gaz-fy-gci">
-                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="EOe-qw-XaI" detailTextLabel="MSa-qb-ntQ" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="qD0-Ys-mos">
@@ -271,10 +271,10 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-mR-Q1c">
-                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ft1-7e-dbM"/>
+                                    <constraint firstAttribute="height" constant="60" id="PRD-jK-uA7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -283,13 +283,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Gaz-fy-gci" firstAttribute="top" secondItem="h2j-mR-Q1c" secondAttribute="bottom" constant="8" symbolic="YES" id="L2s-LF-WKU"/>
-                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="top" secondItem="giP-aa-cNz" secondAttribute="top" id="WbI-b0-3ea"/>
-                            <constraint firstItem="Gaz-fy-gci" firstAttribute="bottom" secondItem="giP-aa-cNz" secondAttribute="bottom" id="aIb-5f-zsi"/>
-                            <constraint firstAttribute="trailing" secondItem="h2j-mR-Q1c" secondAttribute="trailing" id="azI-cm-B80"/>
-                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="leading" secondItem="Gaz-fy-gci" secondAttribute="leading" id="dar-fR-kha"/>
-                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="leading" secondItem="dHp-WE-GLh" secondAttribute="leading" id="gcE-Y1-fLq"/>
-                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="trailing" secondItem="Gaz-fy-gci" secondAttribute="trailing" id="zcd-ZA-CfG"/>
+                            <constraint firstItem="Gaz-fy-gci" firstAttribute="bottom" secondItem="giP-aa-cNz" secondAttribute="bottom" id="Tmz-8Y-8HH"/>
+                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="leading" secondItem="dHp-WE-GLh" secondAttribute="leading" id="cAt-p9-Sr8"/>
+                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="top" secondItem="giP-aa-cNz" secondAttribute="top" id="fX6-Pg-7zQ"/>
+                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="leading" secondItem="Gaz-fy-gci" secondAttribute="leading" id="j7l-8U-Fmv"/>
+                            <constraint firstItem="h2j-mR-Q1c" firstAttribute="trailing" secondItem="Gaz-fy-gci" secondAttribute="trailing" id="v79-5P-oDu"/>
+                            <constraint firstAttribute="trailing" secondItem="h2j-mR-Q1c" secondAttribute="trailing" id="yag-aC-yCS"/>
+                            <constraint firstItem="Gaz-fy-gci" firstAttribute="top" secondItem="h2j-mR-Q1c" secondAttribute="bottom" constant="8" symbolic="YES" id="yzk-c2-bGV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="giP-aa-cNz"/>
                     </view>
