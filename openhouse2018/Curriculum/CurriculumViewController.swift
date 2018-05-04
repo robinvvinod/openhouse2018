@@ -26,11 +26,20 @@ class CurriculumViewController: UIViewController, UITableViewDelegate, UITableVi
 			let currentSubject = data[indexPath.section][indexPath.row-1]
 			cell.textLabel?.text = currentSubject.location
 			let nextTime = currentSubject.nextTiming()
+			var detailText: String!
 			if nextTime != nil {
-				cell.detailTextLabel?.text = nextTime![0] + "(" + nextTime![1] + ")"
+				if nextTime![0] == "timebutbefore" {
+					detailText = nextTime![1]
+				} else if nextTime![0] == "notimeandbefore" {
+					detailText = "8:30 - 4:30"
+				} else {
+					detailText = nextTime![0] + "(" + nextTime![1] + ")"
+				}
 			} else {
-				cell.detailTextLabel?.text = "Any Time"
+				detailText = "8:30 - 4:30"
 			}
+			
+			cell.detailTextLabel?.text = detailText
 			
 			return cell
 		}

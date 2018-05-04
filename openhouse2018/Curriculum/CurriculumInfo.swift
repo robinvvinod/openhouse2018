@@ -28,10 +28,14 @@ struct Subject {
 					return [timeString, (String(minutesToStart/60) +  "h " + String(minutesToStart%60) + "min")]
 				}
 			}
+			//No timings available
+			return nil
 		}
-		
-		//No timings available
-		return nil
+		//Before the day
+		if timings != nil {
+			return ["timebutbefore", timings![0]]
+		}
+		return ["notimeandbefore"]
 	}
 }
 
@@ -40,7 +44,7 @@ var showcases = [
 	Subject(subject: "Physics", location: "Bio Lab 2 (Block C Lvl 1)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
 	Subject(subject: "Biology", location: "Bio Lab 1 (Block C Lvl 1)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
 	Subject(subject: "Biotechnology", location: "Biotech Lab 1 (Block C Lvl 1)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
-	Subject(subject: "Electronics", location: "Engineering Lab - FOE(Block C Lvl 2)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
+	Subject(subject: "Electronics", location: "Engineering Lab (Block C Lvl 2)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
 	Subject(subject: "Science TDP", location: "Physics Lab 1 (Block C Lvl 2)", timings: nil)
 ]
 
