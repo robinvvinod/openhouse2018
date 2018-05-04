@@ -21,7 +21,7 @@ internal class DetailViewController: UIViewController {
     fileprivate var xButton = XButton()
     
     override var prefersStatusBarHidden: Bool {
-        if isFullscreen { return true }
+        if isFullscreen { return false }
         else { return false }
     }
     
@@ -88,7 +88,7 @@ internal class DetailViewController: UIViewController {
             scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: detail.frame.maxY)
             
             xButton.frame = CGRect (x: scrollView.frame.maxX - 20 - 40,
-                                    y: scrollView.frame.minY + 20,
+                                    y: scrollView.frame.minY + 30,
                                     width: 40,
                                     height: 40)
             
