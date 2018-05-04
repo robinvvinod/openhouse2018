@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     @IBOutlet var curriculum: CardHighlight!
     @IBOutlet var schedule: CardHighlight!
     @IBOutlet var map: CardHighlight!
+    @IBOutlet var booths: CardHighlight!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,7 +106,7 @@ class MainViewController: UIViewController {
         // Schedule
         
         schedule.backgroundImage = UIImage(named: "mapBg")
-        schedule.title = "Schedule"
+        schedule.title = "Activites"
         schedule.itemTitle = "See the activities \n going on"
         schedule.itemSubtitle = ""
         schedule.textColor = UIColor.white
@@ -127,6 +128,19 @@ class MainViewController: UIViewController {
         
         let mapVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
         map.shouldPresent(mapVC, from: self, fullscreen: true)
+        
+        // Booths
+        
+        booths.backgroundImage = UIImage(named: "mapBg")
+        booths.title = "Booths"
+        booths.itemTitle = "Check out the booths\naround the school"
+        booths.itemSubtitle = ""
+        booths.textColor = UIColor.white
+        
+        booths.hasParallax = false
+        
+        let boothsVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
+        booths.shouldPresent(boothsVC, from: self, fullscreen: true)
         
     }
     
