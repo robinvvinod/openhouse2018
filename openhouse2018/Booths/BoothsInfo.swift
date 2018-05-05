@@ -21,7 +21,8 @@ struct Subject {
 				let startingMinute = Int(timeString.prefix(5).suffix(2))
 				
 				let beforeStartingHour = Calendar.current.component(.hour, from: Date()) < startingHour!
-				let beforeStartingMinute = (Calendar.current.component(.minute, from: Date()) < startingMinute! && Calendar.current.component(.hour, from: Date()) == startingHour!)
+
+                let beforeStartingMinute = (Calendar.current.component(.minute, from: Date()) < startingMinute! && Calendar.current.component(.hour, from: Date()) == startingHour!)
 				
 				if beforeStartingHour || beforeStartingMinute {
 					let minutesToStart = startingMinute! - Calendar.current.component(.minute, from: Date()) + ((startingHour! - Calendar.current.component(.hour, from: Date()))*60)
