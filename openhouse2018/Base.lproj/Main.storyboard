@@ -63,11 +63,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-De-BnR" customClass="CardHighlight" customModule="Cards">
-                                                <rect key="frame" x="37" y="1960" width="300" height="340"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -97,11 +92,10 @@
                     <size key="freeformSize" width="375" height="2310"/>
                     <connections>
                         <outlet property="aboutSST" destination="LgU-cU-v49" id="iQg-Tr-uWt"/>
-                        <outlet property="booths" destination="AzF-2f-8BG" id="Uso-X3-zcN"/>
+                        <outlet property="booths" destination="iBE-Sq-hA2" id="DFx-Ji-H1p"/>
                         <outlet property="comingnext" destination="z3g-Ck-8Ti" id="tqu-PD-Z5l"/>
-                        <outlet property="curriculum" destination="iBE-Sq-hA2" id="qa3-F5-HM1"/>
                         <outlet property="gradientView" destination="x3r-d2-0LV" id="Tmd-S5-i10"/>
-                        <outlet property="map" destination="Siq-De-BnR" id="I45-Og-ITv"/>
+                        <outlet property="map" destination="AzF-2f-8BG" id="QNb-H6-JGQ"/>
                         <outlet property="schedule" destination="XP6-Rt-LjU" id="GOR-RG-sLW"/>
                     </connections>
                 </viewController>
@@ -124,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1512.8" y="31.934032983508249"/>
         </scene>
-        <!--Curriculum View Controller-->
+        <!--Booths View Controller-->
         <scene sceneID="UfA-1b-lH0">
             <objects>
-                <viewController storyboardIdentifier="curriculumVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3T9-wR-lTT" customClass="CurriculumViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="boothsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3T9-wR-lTT" customClass="BoothsViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zBH-XT-Cre">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +174,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curriculum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-Ye-twq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booths" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-Ye-twq">
                                 <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

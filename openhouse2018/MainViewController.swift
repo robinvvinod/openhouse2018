@@ -15,7 +15,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet var comingnext: CardHighlight!
     @IBOutlet var aboutSST: CardPlayer!
-    @IBOutlet var curriculum: CardHighlight!
     @IBOutlet var schedule: CardHighlight!
     @IBOutlet var map: CardHighlight!
     @IBOutlet var booths: CardHighlight!
@@ -90,19 +89,6 @@ class MainViewController: UIViewController {
         let comingnextVC = storyboard!.instantiateViewController(withIdentifier: "comingnextVC")
         comingnext.shouldPresent(comingnextVC, from: self, fullscreen: true)
         
-        // Curriculum
-        
-        curriculum.backgroundImage = UIImage(named: "currBg")
-        curriculum.title = "Curriculum"
-        curriculum.itemTitle = "View more about the SST Curriculum"
-        curriculum.itemSubtitle = ""
-        curriculum.textColor = UIColor.white
-        
-        curriculum.hasParallax = false
-        
-        let curriculumVC = storyboard!.instantiateViewController(withIdentifier: "curriculumVC")
-        curriculum.shouldPresent(curriculumVC, from: self, fullscreen: true)
-        
         // Schedule
         
         schedule.backgroundImage = UIImage(named: "mapBg")
@@ -139,7 +125,7 @@ class MainViewController: UIViewController {
         
         booths.hasParallax = false
         
-        let boothsVC = storyboard!.instantiateViewController(withIdentifier: "mapVC")
+        let boothsVC = storyboard!.instantiateViewController(withIdentifier: "boothsVC")
         booths.shouldPresent(boothsVC, from: self, fullscreen: true)
         
     }

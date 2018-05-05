@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurriculumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		if detailViewCellIndex != nil && detailViewCellIndex?.section == section {

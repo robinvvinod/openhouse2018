@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DB7C6A820918B1900C53FBF /* CurriculumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7C6A720918B1900C53FBF /* CurriculumInfo.swift */; };
+		1DB7C6A820918B1900C53FBF /* BoothsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */; };
 		2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E10DEA3206CE35F00F979C7 /* video.mp4 */; };
 		2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E4DBB20859EB600E13691 /* Reachability.swift */; };
 		2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8866FC200475D20090BCAF /* AppDelegate.swift */; };
@@ -21,7 +21,7 @@
 		2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */; };
 		2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */; };
 		2EF4F44A207F92000037CB7C /* ComingNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F449207F92000037CB7C /* ComingNextViewController.swift */; };
-		2EF4F44C207F92FE0037CB7C /* CurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */; };
+		2EF4F44C207F92FE0037CB7C /* BoothsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */; };
 		47E0C8B598DAF228EB5D889F /* Pods_openhouse2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A0F24F33801605794CB49 /* Pods_openhouse2018.framework */; };
 		7DB2AE55A577028E687982F7 /* Pods_openhouse2018UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED66DBB203672BC540BBF92 /* Pods_openhouse2018UITests.framework */; };
 		D321298920AABC1A9BA5A9B3 /* Pods_openhouse2018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBE631AE2E471C4F7FCF13E /* Pods_openhouse2018Tests.framework */; };
@@ -45,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DB7C6A720918B1900C53FBF /* CurriculumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumInfo.swift; sourceTree = "<group>"; };
+		1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsInfo.swift; sourceTree = "<group>"; };
 		2E10DEA3206CE35F00F979C7 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		2E2E4DBB20859EB600E13691 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2E8866F9200475D20090BCAF /* openhouse2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openhouse2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 		2ED66DBB203672BC540BBF92 /* Pods_openhouse2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSSTViewController.swift; sourceTree = "<group>"; };
 		2EF4F449207F92000037CB7C /* ComingNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingNextViewController.swift; sourceTree = "<group>"; };
-		2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumViewController.swift; sourceTree = "<group>"; };
+		2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsViewController.swift; sourceTree = "<group>"; };
 		33B9947A7A2ED3C541B57B09 /* Pods-openhouse2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018.release.xcconfig"; sourceTree = "<group>"; };
 		4EBE631AE2E471C4F7FCF13E /* Pods_openhouse2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6601FF1E00E3D3A10C082C1E /* Pods-openhouse2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,13 +105,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DB7C6A620918B0200C53FBF /* Curriculum */ = {
+		1DB7C6A620918B0200C53FBF /* Booths */ = {
 			isa = PBXGroup;
 			children = (
-				2EF4F44B207F92FE0037CB7C /* CurriculumViewController.swift */,
-				1DB7C6A720918B1900C53FBF /* CurriculumInfo.swift */,
+				2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */,
+				1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */,
 			);
-			path = Curriculum;
+			path = Booths;
 			sourceTree = "<group>";
 		};
 		2E8866F0200475D20090BCAF = {
@@ -144,7 +144,7 @@
 				2EA40B592004F1B5008364A8 /* MainViewController.swift */,
 				2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */,
 				2EF4F449207F92000037CB7C /* ComingNextViewController.swift */,
-				1DB7C6A620918B0200C53FBF /* Curriculum */,
+				1DB7C6A620918B0200C53FBF /* Booths */,
 				2E95E78F20807C7100D6801E /* MapViewController.swift */,
 				2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
@@ -507,11 +507,11 @@
 				2E95E79020807C7100D6801E /* MapViewController.swift in Sources */,
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
 				2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */,
-				1DB7C6A820918B1900C53FBF /* CurriculumInfo.swift in Sources */,
+				1DB7C6A820918B1900C53FBF /* BoothsInfo.swift in Sources */,
 				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
 				2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */,
-				2EF4F44C207F92FE0037CB7C /* CurriculumViewController.swift in Sources */,
+				2EF4F44C207F92FE0037CB7C /* BoothsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
