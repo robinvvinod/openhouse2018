@@ -41,12 +41,12 @@ struct Subject {
 }
 
 var showcases = [
-	Subject(subject: "Chemistry", location: "Chem Lab 2 (Block C Lvl 1)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
-	Subject(subject: "Physics", location: "Bio Lab 2 (Block C Lvl 1)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
-	Subject(subject: "Biology", location: "Bio Lab 1 (Block C Lvl 1)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
-	Subject(subject: "Biotechnology", location: "Biotech Lab 1 (Block C Lvl 1)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
-	Subject(subject: "Electronics", location: "Engineering Lab (Block C Lvl 2)", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
-	Subject(subject: "Science TDP", location: "Physics Lab 1 (Block C Lvl 2)", timings: nil)
+	Subject(subject: "Chemistry", location: "Blk C Lvl 1, Chem Lab 2", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
+	Subject(subject: "Physics", location: "Blk C Lvl 1, Bio Lab 2", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
+	Subject(subject: "Biology", location: "Blk C Lvl 1, Bio Lab 1", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
+	Subject(subject: "Biotechnology", location: "Blk C Lvl 1, Biotech Lab 1", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
+	Subject(subject: "Electronics", location: "Blk C Lvl 2, Engineering Lab", timings: ["10:30 - 11:30", "12:30 - 13:30", "14:00 - 15:00", "15:30 - 16:30"]),
+	Subject(subject: "Science TDP", location: "Blk C Lvl 2, Physics Lab 1", timings: nil)
 ]
 
 var ccas = [
@@ -62,14 +62,14 @@ var ccas = [
 ]
 
 var academics = [
-	Subject(subject: "ACE", location: "Level 2, Outside Maker Lab", timings: nil),
-	Subject(subject: "English", location: "Level 2, Outside Maker Lab", timings: nil),
-	Subject(subject: "IH", location: "Level 2, Outside Maker Lab", timings: nil),
-	Subject(subject: "Mathematics", location: "Level 2, Outside Maker Lab", timings: nil),
-	Subject(subject: "Chinese", location: "Level 2, Outside Maker Lab", timings: nil),
-	Subject(subject: "Malay", location: "Level 2, Outside Maker Lab", timings: nil),
-	Subject(subject: "Tamil", location: "Level 2, Outside Maker Lab", timings: nil),
-	Subject(subject: "S & W", location: "Level 2, Outside Maker Lab", timings: nil)
+	Subject(subject: "ACE", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil),
+	Subject(subject: "English", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil),
+	Subject(subject: "IH", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil),
+	Subject(subject: "Mathematics", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil),
+	Subject(subject: "Chinese", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil),
+	Subject(subject: "Malay", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil),
+	Subject(subject: "Tamil", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil),
+	Subject(subject: "S & W", location: "Blk C Lvl 2, Outside Maker Lab", timings: nil)
 ]
 
 var data = [showcases, ccas, academics]
