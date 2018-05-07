@@ -19,6 +19,7 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
+		/* NOT IN USE
 		if indexPath == detailViewCellIndex {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "detailViewCell", for: indexPath)
 			
@@ -44,6 +45,7 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 			
 			return cell
 		}
+		*/
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "subjectViewCell", for: indexPath)
 		
@@ -52,6 +54,10 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 			cell.textLabel?.text = data[indexPath.section][indexPath.row-1].subject
 		} else {
 			cell.textLabel?.text = data[indexPath.section][indexPath.row].subject
+		}
+		
+		if !detailViewCellInUse {
+			cell.detailTextLabel?.text = data[indexPath.section][indexPath.row].location
 		}
 		
 		return cell
@@ -82,6 +88,7 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 	@IBOutlet weak var curriculumTableView: UITableView!
 	
 	var detailViewCellIndex: IndexPath?
+	var detailViewCellInUse = false
     
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +98,10 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 		curriculumTableView.delegate = self
 		curriculumTableView.dataSource = self
 		detailViewCellIndex = nil
+		
+		if !detailViewCellInUse {
+			self.curriculumTableView.allowsSelection = false
+		}
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,7 +115,10 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 	
 	func detailViewCellAffects(forCellAt indexPath: IndexPath) -> Bool {
-		return detailViewCellIndex != nil && detailViewCellIndex!.section == indexPath.section && detailViewCellIndex!.row < indexPath.row
+		if detailViewCellInUse {
+			return detailViewCellIndex != nil && detailViewCellIndex!.section == indexPath.section && detailViewCellIndex!.row < indexPath.row
+		}
+		return false
 	}
 
 }
