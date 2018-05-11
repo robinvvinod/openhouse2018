@@ -63,6 +63,10 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 		return cell
 	}
 	
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		return 90
+	}
+	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return data.count
 	}
