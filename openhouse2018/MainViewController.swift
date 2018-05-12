@@ -68,7 +68,8 @@ class MainViewController: UIViewController {
         aboutSST.shouldRestartVideoWhenPlaybackEnds = true
         
         aboutSST.title = "Our School"
-        aboutSST.subtitle = "Tap to learn more about SST "
+        aboutSST.titleSize = 22
+        aboutSST.subtitle = "Learn more about SST "
         aboutSST.category = "About SST"
         aboutSST.subtitleSize = 16
         aboutSST.hasParallax = false
@@ -129,18 +130,7 @@ class MainViewController: UIViewController {
         booths.shouldPresent(boothsVC, from: self, fullscreen: true)
         
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
         
-        //let gradient = CAGradientLayer()
-        
-        //gradient.frame = gradientView.bounds
-        //gradient.colors = [UIColor(red: 236/255, green: 247/255, blue: 231/255, alpha: 1).cgColor, UIColor(red: 208/255, green: 156/255, blue: 215/255, alpha: 1).cgColor]
-        
-        //gradientView.layer.insertSublayer(gradient, at: 0)
-        
-    }
-    
     override var prefersStatusBarHidden: Bool {
         return true
     }

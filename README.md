@@ -19,7 +19,9 @@
 ### Future Work
 - [x] Card design
 - [ ] Coming up next
-- [ ] Curriculum Info
+- [x] Booths
+- [x] Activities
+- [x] Search
 - [ ] Map View
 - [ ] Booth Codes
 
@@ -28,4 +30,4 @@
 ### Acknowledgements
 
 * Card interface sourced from [GitHub - PaoloCuscela/Cards: Awesome iOS 11 appstore cards in swift 4.](https://github.com/PaoloCuscela/Cards)
-*
+

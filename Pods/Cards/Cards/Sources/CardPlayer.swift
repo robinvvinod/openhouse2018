@@ -126,7 +126,7 @@ import Player
         player.playbackDelegate = self
         player.fillMode = PlayerFillMode.resizeAspectFill.avFoundationType
         if let url = videoSource { player.url = url }
-        else { print("CARDS: Something wrong with the video source URL") }
+        
        
         backgroundIV.addSubview(self.player.view)
         playPauseV.contentView.addSubview(playIV)
@@ -182,9 +182,7 @@ import Player
         
         subtitleLbl.text = subtitle
         subtitleLbl.textColor = textColor
-        subtitleLbl.font = UIFont.systemFont(ofSize: subtitleSize, weight: .medium)
-        subtitleLbl.shadowColor = UIColor.black
-        subtitleLbl.shadowOffset = CGSize.zero
+        subtitleLbl.font = UIFont.systemFont(ofSize: subtitleSize, weight: .regular)
         subtitleLbl.adjustsFontSizeToFitWidth = true
         subtitleLbl.minimumScaleFactor = 0.1
         subtitleLbl.lineBreakMode = .byTruncatingTail
