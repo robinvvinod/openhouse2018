@@ -17,6 +17,7 @@
 		2E886707200475D20090BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E886705200475D20090BCAF /* LaunchScreen.storyboard */; };
 		2E886712200475D20090BCAF /* openhouse2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E886711200475D20090BCAF /* openhouse2018Tests.swift */; };
 		2E88671D200475D20090BCAF /* openhouse2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88671C200475D20090BCAF /* openhouse2018UITests.swift */; };
+		2E8BBC3A20A98C83003C8C1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BBC3920A98C83003C8C1A /* GoogleService-Info.plist */; };
 		2E95E79020807C7100D6801E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95E78F20807C7100D6801E /* MapViewController.swift */; };
 		2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA40B592004F1B5008364A8 /* MainViewController.swift */; };
 		2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */; };
@@ -62,6 +63,7 @@
 		2E886718200475D20090BCAF /* openhouse2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openhouse2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E88671C200475D20090BCAF /* openhouse2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openhouse2018UITests.swift; sourceTree = "<group>"; };
 		2E88671E200475D30090BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8BBC3920A98C83003C8C1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E95E78F20807C7100D6801E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2EA40B592004F1B5008364A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
 				2E7E68E620A93EE20059732C /* Assets.xcassets */,
 				2E886708200475D20090BCAF /* Info.plist */,
+				2E8BBC3920A98C83003C8C1A /* GoogleService-Info.plist */,
 				2EA027782085A2B0002BEB67 /* Assets */,
 			);
 			path = openhouse2018;
@@ -220,7 +223,6 @@
 				2E8866F6200475D20090BCAF /* Frameworks */,
 				2E8866F7200475D20090BCAF /* Resources */,
 				69B436466F79E189B2013D72 /* [CP] Embed Pods Frameworks */,
-				7D7987F5A632A11729487E3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,8 +241,6 @@
 				2E886709200475D20090BCAF /* Sources */,
 				2E88670A200475D20090BCAF /* Frameworks */,
 				2E88670B200475D20090BCAF /* Resources */,
-				9425CBD43D94A456B31711F6 /* [CP] Embed Pods Frameworks */,
-				0B249722F2CCB47A81DC42C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,8 +260,6 @@
 				2E886714200475D20090BCAF /* Sources */,
 				2E886715200475D20090BCAF /* Frameworks */,
 				2E886716200475D20090BCAF /* Resources */,
-				21E5258ABC752B4116DF412E /* [CP] Embed Pods Frameworks */,
-				B3596CBC6F03C075439600AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +324,7 @@
 			files = (
 				2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */,
 				2E886707200475D20090BCAF /* LaunchScreen.storyboard in Resources */,
+				2E8BBC3A20A98C83003C8C1A /* GoogleService-Info.plist in Resources */,
 				2E7E68E720A93EE30059732C /* Assets.xcassets in Resources */,
 				2E886702200475D20090BCAF /* Main.storyboard in Resources */,
 			);
@@ -348,36 +347,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B249722F2CCB47A81DC42C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		21E5258ABC752B4116DF412E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		69B436466F79E189B2013D72 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,48 +355,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cards/Cards.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cards.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D7987F5A632A11729487E3C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9425CBD43D94A456B31711F6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A560087E89B36B92A0864A6C /* [CP] Check Pods Manifest.lock */ = {
@@ -464,21 +409,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3596CBC6F03C075439600AC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2049BA9BAE97B0885F015EF /* [CP] Check Pods Manifest.lock */ = {
@@ -695,7 +625,7 @@
 				INFOPLIST_FILE = openhouse2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinvvinod.openhouse2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -716,7 +646,7 @@
 				INFOPLIST_FILE = openhouse2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robinvvinod.openhouse2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
