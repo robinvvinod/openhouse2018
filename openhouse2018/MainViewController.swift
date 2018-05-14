@@ -27,17 +27,6 @@ class MainViewController: UIViewController {
         
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if !launchedBefore {
-            
-            let instructionView = MessageView.viewFromNib(layout: .centeredView)
-            SwiftMessages.defaultConfig.presentationStyle = .center
-            SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
-            instructionView.configureTheme(.success)
-            instructionView.configureDropShadow()
-            instructionView.configureContent(title: "Welcome to SST!", body: "If you are having any problems using the app, please approach one of the Student Councillors for help.")
-            instructionView.button?.isHidden = true
-            SwiftMessages.show(view: instructionView)
-            SwiftMessages.pauseBetweenMessages = 1.0
-            
             UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
         

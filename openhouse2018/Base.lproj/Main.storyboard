@@ -336,7 +336,7 @@
                                 <rect key="frame" x="0.0" y="597" width="188" height="70"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="WLW-mG-LpW"/>
+                                    <constraint firstAttribute="height" constant="70" id="WlV-Fu-hd9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="PRIZE LIST">
@@ -344,66 +344,56 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redemption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp3-JS-JS5">
-                                <rect key="frame" x="16" y="44" width="182" height="39"/>
+                                <rect key="frame" x="16" y="42" width="182" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="ZIm-ni-bP4"/>
+                                    <constraint firstAttribute="height" constant="39" id="0KE-5c-qU6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect codes at booths and win attractive prizes!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFD-5T-Q6W">
-                                <rect key="frame" x="16" y="86" width="307" height="16"/>
+                                <rect key="frame" x="16" y="84" width="307" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="nh3-UP-rYE"/>
+                                    <constraint firstAttribute="height" constant="16" id="crt-pu-dVE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code0" translatesAutoresizingMaskIntoConstraints="NO" id="PDM-9u-nfx">
-                                <rect key="frame" x="107" y="137" width="160" height="353"/>
+                                <rect key="frame" x="79" y="119" width="216" height="404"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codes redeemed" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIy-Ft-As5">
-                                <rect key="frame" x="160" y="498" width="91" height="62"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFE-83-s4g">
-                                <rect key="frame" x="122" y="502" width="30" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codes redeemed" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIy-Ft-As5">
+                                <rect key="frame" x="142" y="512" width="91" height="62"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="RfU-2a-PU0"/>
-                                    <constraint firstAttribute="width" constant="30" id="Y07-kK-Rtr"/>
+                                    <constraint firstAttribute="height" constant="62" id="6Zl-ZB-he6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sp3-JS-JS5" firstAttribute="leading" secondItem="2dk-ot-rBh" secondAttribute="leadingMargin" id="0L9-5N-f9g"/>
-                            <constraint firstItem="ewP-zs-WrL" firstAttribute="top" secondItem="JHP-MV-wiP" secondAttribute="top" id="3LP-ho-Hfs"/>
-                            <constraint firstItem="QFE-83-s4g" firstAttribute="leading" secondItem="hmO-3g-Owd" secondAttribute="leading" constant="122" id="71t-F9-KDo"/>
-                            <constraint firstItem="PDM-9u-nfx" firstAttribute="top" secondItem="VFD-5T-Q6W" secondAttribute="bottom" constant="35" id="7I5-sC-oWc"/>
-                            <constraint firstItem="PDM-9u-nfx" firstAttribute="centerX" secondItem="2dk-ot-rBh" secondAttribute="centerX" id="9Le-s8-aQU"/>
-                            <constraint firstItem="HIy-Ft-As5" firstAttribute="leading" secondItem="QFE-83-s4g" secondAttribute="trailing" constant="8" symbolic="YES" id="CPV-Ez-xCD"/>
-                            <constraint firstAttribute="trailing" secondItem="JHP-MV-wiP" secondAttribute="trailing" id="ERd-l6-cbH"/>
-                            <constraint firstItem="ewP-zs-WrL" firstAttribute="bottom" secondItem="hmO-3g-Owd" secondAttribute="bottom" id="HAM-Xr-XSV"/>
-                            <constraint firstItem="QFE-83-s4g" firstAttribute="top" secondItem="PDM-9u-nfx" secondAttribute="bottom" constant="12" id="IzE-Cm-BBY"/>
-                            <constraint firstItem="hmO-3g-Owd" firstAttribute="trailing" secondItem="ewP-zs-WrL" secondAttribute="trailing" constant="187" id="Mpf-Ox-yha"/>
-                            <constraint firstItem="sp3-JS-JS5" firstAttribute="top" secondItem="hmO-3g-Owd" secondAttribute="top" constant="24" id="Nah-3t-S5q"/>
-                            <constraint firstItem="JHP-MV-wiP" firstAttribute="leading" secondItem="hmO-3g-Owd" secondAttribute="leading" constant="187" id="TOo-9Q-UHW"/>
-                            <constraint firstItem="sp3-JS-JS5" firstAttribute="leading" secondItem="VFD-5T-Q6W" secondAttribute="leading" id="ZEE-Ar-LRR"/>
-                            <constraint firstItem="VFD-5T-Q6W" firstAttribute="top" secondItem="sp3-JS-JS5" secondAttribute="bottom" constant="3" id="bCo-6q-lW1"/>
-                            <constraint firstItem="PDM-9u-nfx" firstAttribute="leading" secondItem="hmO-3g-Owd" secondAttribute="leading" constant="107" id="bsf-LV-DuU"/>
-                            <constraint firstItem="hmO-3g-Owd" firstAttribute="trailing" secondItem="HIy-Ft-As5" secondAttribute="trailing" constant="124" id="dJT-8A-brN"/>
-                            <constraint firstItem="HIy-Ft-As5" firstAttribute="top" secondItem="PDM-9u-nfx" secondAttribute="bottom" constant="8" symbolic="YES" id="jhe-Hw-I51"/>
-                            <constraint firstItem="ewP-zs-WrL" firstAttribute="baseline" secondItem="JHP-MV-wiP" secondAttribute="firstBaseline" id="qfw-Fn-K6D"/>
-                            <constraint firstItem="ewP-zs-WrL" firstAttribute="top" secondItem="QFE-83-s4g" secondAttribute="bottom" constant="37" id="qgG-PY-TNc"/>
-                            <constraint firstItem="ewP-zs-WrL" firstAttribute="leading" secondItem="2dk-ot-rBh" secondAttribute="leading" id="ySd-w8-lqH"/>
-                            <constraint firstItem="QFE-83-s4g" firstAttribute="bottom" secondItem="HIy-Ft-As5" secondAttribute="bottom" id="zfP-Gx-QyE"/>
+                            <constraint firstItem="ewP-zs-WrL" firstAttribute="leading" secondItem="2dk-ot-rBh" secondAttribute="leading" id="715-cd-3zm"/>
+                            <constraint firstItem="PDM-9u-nfx" firstAttribute="centerX" secondItem="2dk-ot-rBh" secondAttribute="centerX" id="I5N-FY-Zpo"/>
+                            <constraint firstItem="hmO-3g-Owd" firstAttribute="trailing" secondItem="ewP-zs-WrL" secondAttribute="trailing" constant="187" id="Kvq-Gc-Cie"/>
+                            <constraint firstItem="VFD-5T-Q6W" firstAttribute="top" secondItem="sp3-JS-JS5" secondAttribute="bottom" constant="3" id="Pqq-0T-tRv"/>
+                            <constraint firstItem="sp3-JS-JS5" firstAttribute="leading" secondItem="VFD-5T-Q6W" secondAttribute="leading" id="Thn-Gu-pSV"/>
+                            <constraint firstItem="ewP-zs-WrL" firstAttribute="top" secondItem="JHP-MV-wiP" secondAttribute="top" id="UZv-eV-tdi"/>
+                            <constraint firstItem="ewP-zs-WrL" firstAttribute="bottom" secondItem="hmO-3g-Owd" secondAttribute="bottom" id="WR7-Ni-IwP"/>
+                            <constraint firstItem="sp3-JS-JS5" firstAttribute="top" secondItem="hmO-3g-Owd" secondAttribute="top" constant="22" id="XJx-yx-ydf"/>
+                            <constraint firstItem="HIy-Ft-As5" firstAttribute="leading" secondItem="hmO-3g-Owd" secondAttribute="leading" constant="142" id="a4i-7J-5YN"/>
+                            <constraint firstItem="JHP-MV-wiP" firstAttribute="top" secondItem="PDM-9u-nfx" secondAttribute="bottom" constant="74" id="bs7-JS-ROF"/>
+                            <constraint firstItem="JHP-MV-wiP" firstAttribute="leading" secondItem="hmO-3g-Owd" secondAttribute="leading" constant="187" id="cAx-FJ-FtY"/>
+                            <constraint firstAttribute="trailing" secondItem="JHP-MV-wiP" secondAttribute="trailing" id="fG6-jp-Gdk"/>
+                            <constraint firstItem="sp3-JS-JS5" firstAttribute="leading" secondItem="2dk-ot-rBh" secondAttribute="leadingMargin" id="ljm-To-UGq"/>
+                            <constraint firstItem="ewP-zs-WrL" firstAttribute="top" secondItem="HIy-Ft-As5" secondAttribute="bottom" constant="23" id="rif-74-mJQ"/>
+                            <constraint firstItem="ewP-zs-WrL" firstAttribute="baseline" secondItem="JHP-MV-wiP" secondAttribute="firstBaseline" id="uFi-NY-QWK"/>
+                            <constraint firstItem="PDM-9u-nfx" firstAttribute="top" secondItem="VFD-5T-Q6W" secondAttribute="bottom" constant="19" id="wgE-0Y-Inv"/>
+                            <constraint firstItem="PDM-9u-nfx" firstAttribute="centerX" secondItem="HIy-Ft-As5" secondAttribute="centerX" id="xxR-hf-Pfi"/>
+                            <constraint firstItem="PDM-9u-nfx" firstAttribute="leading" secondItem="hmO-3g-Owd" secondAttribute="leading" constant="79" id="z1K-dT-oFc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hmO-3g-Owd"/>
                     </view>
