@@ -28,6 +28,7 @@ class MainViewController: UIViewController {
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if !launchedBefore {
             UserDefaults.standard.set(true, forKey: "launchedBefore")
+            UserDefaults.standard.set(0, forKey: "codes") 
         }
         
         // Check for internet access

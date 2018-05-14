@@ -331,6 +331,9 @@
                                 <state key="normal" title="REDEEM">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="redeem:" destination="y2Z-Tj-4rN" eventType="touchUpInside" id="Ise-An-4fh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-zs-WrL">
                                 <rect key="frame" x="0.0" y="597" width="188" height="70"/>
@@ -397,6 +400,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hmO-3g-Owd"/>
                     </view>
+                    <connections>
+                        <outlet property="cylinderImage" destination="PDM-9u-nfx" id="Dv2-nb-0O5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dH2-FM-kkv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
