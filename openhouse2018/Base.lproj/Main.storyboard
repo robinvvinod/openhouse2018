@@ -345,6 +345,9 @@
                                 <state key="normal" title="PRIZE LIST">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="prizeList:" destination="y2Z-Tj-4rN" eventType="touchUpInside" id="G7n-ZY-kub"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redemption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp3-JS-JS5">
                                 <rect key="frame" x="16" y="42" width="182" height="39"/>
