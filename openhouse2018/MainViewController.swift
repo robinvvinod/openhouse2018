@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     @IBOutlet var schedule: CardHighlight!
     @IBOutlet var map: CardHighlight!
     @IBOutlet var booths: CardHighlight!
+    @IBOutlet var redemption: CardHighlight!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -128,6 +129,19 @@ class MainViewController: UIViewController {
         
         let boothsVC = storyboard!.instantiateViewController(withIdentifier: "boothsVC")
         booths.shouldPresent(boothsVC, from: self, fullscreen: true)
+        
+        // Redemption
+        
+        redemption.backgroundImage = UIImage(named: "mapBg")
+        redemption.title = "Redemption"
+        redemption.itemTitle = "Collect codes at booths\nto win attractive prizes!"
+        redemption.itemSubtitle = ""
+        redemption.textColor = UIColor.white
+        
+        redemption.hasParallax = false
+        
+        let redemptionVC = storyboard!.instantiateViewController(withIdentifier: "redemptionVC")
+        redemption.shouldPresent(redemptionVC, from: self, fullscreen: true)
         
     }
         
