@@ -10,9 +10,10 @@
 		1DB7C6A820918B1900C53FBF /* BoothsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */; };
 		2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E10DEA3206CE35F00F979C7 /* video.mp4 */; };
 		2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E4DBB20859EB600E13691 /* Reachability.swift */; };
+		2E7E68E520A934950059732C /* RedemptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E68E420A934950059732C /* RedemptionViewController.swift */; };
+		2E7E68E720A93EE30059732C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E68E620A93EE20059732C /* Assets.xcassets */; };
 		2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8866FC200475D20090BCAF /* AppDelegate.swift */; };
 		2E886702200475D20090BCAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E886700200475D20090BCAF /* Main.storyboard */; };
-		2E886704200475D20090BCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E886703200475D20090BCAF /* Assets.xcassets */; };
 		2E886707200475D20090BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E886705200475D20090BCAF /* LaunchScreen.storyboard */; };
 		2E886712200475D20090BCAF /* openhouse2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E886711200475D20090BCAF /* openhouse2018Tests.swift */; };
 		2E88671D200475D20090BCAF /* openhouse2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88671C200475D20090BCAF /* openhouse2018UITests.swift */; };
@@ -48,10 +49,11 @@
 		1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsInfo.swift; sourceTree = "<group>"; };
 		2E10DEA3206CE35F00F979C7 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		2E2E4DBB20859EB600E13691 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		2E7E68E420A934950059732C /* RedemptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionViewController.swift; sourceTree = "<group>"; };
+		2E7E68E620A93EE20059732C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8866F9200475D20090BCAF /* openhouse2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openhouse2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8866FC200475D20090BCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E886701200475D20090BCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E886703200475D20090BCAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E886706200475D20090BCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E886708200475D20090BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E88670D200475D20090BCAF /* openhouse2018Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openhouse2018Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,9 +149,10 @@
 				1DB7C6A620918B0200C53FBF /* Booths */,
 				2E95E78F20807C7100D6801E /* MapViewController.swift */,
 				2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */,
+				2E7E68E420A934950059732C /* RedemptionViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
-				2E886703200475D20090BCAF /* Assets.xcassets */,
+				2E7E68E620A93EE20059732C /* Assets.xcassets */,
 				2E886708200475D20090BCAF /* Info.plist */,
 				2EA027782085A2B0002BEB67 /* Assets */,
 			);
@@ -323,7 +326,7 @@
 			files = (
 				2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */,
 				2E886707200475D20090BCAF /* LaunchScreen.storyboard in Resources */,
-				2E886704200475D20090BCAF /* Assets.xcassets in Resources */,
+				2E7E68E720A93EE30059732C /* Assets.xcassets in Resources */,
 				2E886702200475D20090BCAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +513,7 @@
 				1DB7C6A820918B1900C53FBF /* BoothsInfo.swift in Sources */,
 				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
+				2E7E68E520A934950059732C /* RedemptionViewController.swift in Sources */,
 				2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */,
 				2EF4F44C207F92FE0037CB7C /* BoothsViewController.swift in Sources */,
 			);
