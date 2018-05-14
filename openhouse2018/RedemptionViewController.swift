@@ -110,16 +110,40 @@ class RedemptionViewController: UIViewController {
                 
             else {
                 self.numberClaimed += 1
-                self.cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
-                UserDefaults.standard.set(self.numberClaimed, forKey: "codes")
-                self.claimed.append(self.enteredCode)
-                UserDefaults.standard.set(self.claimed, forKey: "claimed")
+                
+                if self.numberClaimed <= 10 {
+                    self.cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
+                    UserDefaults.standard.set(self.numberClaimed, forKey: "codes")
+                    self.claimed.append(self.enteredCode)
+                    UserDefaults.standard.set(self.claimed, forKey: "claimed")
+                }
+                else {
+                    SwiftMessages.defaultConfig.presentationStyle = .top
+                    SwiftMessages.defaultConfig.duration = .seconds(seconds: 5)
+                    let exceedError = MessageView.viewFromNib(layout: .cardView)
+                    exceedError.configureTheme(.error)
+                    exceedError.configureDropShadow()
+                    exceedError.button?.isHidden = true
+                    exceedError.configureContent(title: "Error", body: "You cannot redeem more than 10 codes.")
+                    SwiftMessages.show(view: exceedError)
+                }
             }
             
         }))
         
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func prizeList(_ sender: Any) {
+        SwiftMessages.defaultConfig.presentationStyle = .center
+        SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
+        let internetAlert = MessageView.viewFromNib(layout: .centeredView)
+        internetAlert.configureTheme(.info)
+        internetAlert.configureDropShadow()
+        internetAlert.button?.isHidden = true
+        internetAlert.configureContent(title: "Prize List", body: "1 - 3 codes - Tier 1 Prize\n4 - 7 codes - Tier 2 Prize\n8 - 10 codes - Tier 3 Prize")
+        SwiftMessages.show(view: internetAlert)
     }
     
     override func didReceiveMemoryWarning() {
