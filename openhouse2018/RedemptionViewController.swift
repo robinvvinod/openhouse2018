@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SwiftMessages
 
-class RedemptionViewController: UIViewController {
+class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var ref: DatabaseReference!
     var codes = [String]()
@@ -40,6 +40,11 @@ class RedemptionViewController: UIViewController {
         numberClaimed = UserDefaults.standard.integer(forKey: "codes")
         cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
         
+        let tapRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.tappedImage(_:)))
+        tapRecognizer.delegate = self
+        self.cylinderImage.addGestureRecognizer(tapRecognizer)
+        self.cylinderImage.isUserInteractionEnabled = true
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,6 +59,21 @@ class RedemptionViewController: UIViewController {
                 
             }
         })
+    }
+    
+    @objc func tappedImage(_ sender: AnyObject) {
+        SwiftMessages.defaultConfig.presentationStyle = .center
+        SwiftMessages.defaultConfig.duration = .seconds(seconds: 5)
+        let slInfo = MessageView.viewFromNib(layout: .centeredView)
+        slInfo.configureTheme(.warning)
+        slInfo.configureDropShadow()
+        slInfo.button?.setTitle("Mark as redeemed", for: .normal)
+        slInfo.buttonTapHandler = {
+            _ in UserDefaults.standard.set(true, forKey: "redeemed")
+            SwiftMessages.hide()
+        }
+        slInfo.configureContent(title: "Information for SLs", body: "DSA registration done? :   \(UserDefaults.standard.bool(forKey: "dsadone"))\nRedeemed Before? :    \(UserDefaults.standard.bool(forKey: "redeemed"))\n")
+        SwiftMessages.show(view: slInfo)
     }
 
     @IBAction func redeem(_ sender: Any) {
@@ -72,6 +92,10 @@ class RedemptionViewController: UIViewController {
             if alert?.textFields![0].text != nil {
                 self.enteredCode = (alert?.textFields![0].text)!
             } else {self.enteredCode = "NIL"}
+            
+            if self.enteredCode == "JQWN" { // Checking if DSA registration was done
+                UserDefaults.standard.set(true, forKey: "dsadone")
+            }
             
             // Retrieving claimed list from UserDefaults
             
