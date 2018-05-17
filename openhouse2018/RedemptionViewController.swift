@@ -22,6 +22,18 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        numberClaimed = UserDefaults.standard.integer(forKey: "codes")
+        cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
+        
+        let tapRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.tappedImage(_:)))
+        tapRecognizer.delegate = self
+        self.cylinderImage.addGestureRecognizer(tapRecognizer)
+        self.cylinderImage.isUserInteractionEnabled = true
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
         // Check for internet access
         
         if Reachability.isConnectedToNetwork() == false {
@@ -37,17 +49,6 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
             
         }
         
-        numberClaimed = UserDefaults.standard.integer(forKey: "codes")
-        cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
-        
-        let tapRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.tappedImage(_:)))
-        tapRecognizer.delegate = self
-        self.cylinderImage.addGestureRecognizer(tapRecognizer)
-        self.cylinderImage.isUserInteractionEnabled = true
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         ref = Database.database().reference()
         
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
@@ -59,6 +60,7 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
                 
             }
         })
+        
     }
     
     @objc func tappedImage(_ sender: AnyObject) {
