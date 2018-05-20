@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DB7C6A820918B1900C53FBF /* BoothsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */; };
+		1D1D8B6F20B1C2F900B2EACD /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D8B6E20B1C2F900B2EACD /* ScheduleData.swift */; };
+		1DB7C6A820918B1900C53FBF /* BoothsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7C6A720918B1900C53FBF /* BoothsData.swift */; };
 		2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E10DEA3206CE35F00F979C7 /* video.mp4 */; };
 		2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E4DBB20859EB600E13691 /* Reachability.swift */; };
 		2E7E68E520A934950059732C /* RedemptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E68E420A934950059732C /* RedemptionViewController.swift */; };
@@ -47,7 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsInfo.swift; sourceTree = "<group>"; };
+		1D1D8B6E20B1C2F900B2EACD /* ScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
+		1DB7C6A720918B1900C53FBF /* BoothsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsData.swift; sourceTree = "<group>"; };
 		2E10DEA3206CE35F00F979C7 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		2E2E4DBB20859EB600E13691 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2E7E68E420A934950059732C /* RedemptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */,
-				1DB7C6A720918B1900C53FBF /* BoothsInfo.swift */,
+				1DB7C6A720918B1900C53FBF /* BoothsData.swift */,
 			);
 			path = Booths;
 			sourceTree = "<group>";
@@ -151,6 +153,7 @@
 				1DB7C6A620918B0200C53FBF /* Booths */,
 				2E95E78F20807C7100D6801E /* MapViewController.swift */,
 				2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */,
+				1D1D8B6E20B1C2F900B2EACD /* ScheduleData.swift */,
 				2E7E68E420A934950059732C /* RedemptionViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
@@ -440,11 +443,12 @@
 				2E95E79020807C7100D6801E /* MapViewController.swift in Sources */,
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
 				2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */,
-				1DB7C6A820918B1900C53FBF /* BoothsInfo.swift in Sources */,
+				1DB7C6A820918B1900C53FBF /* BoothsData.swift in Sources */,
 				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
 				2E7E68E520A934950059732C /* RedemptionViewController.swift in Sources */,
 				2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */,
+				1D1D8B6F20B1C2F900B2EACD /* ScheduleData.swift in Sources */,
 				2EF4F44C207F92FE0037CB7C /* BoothsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
