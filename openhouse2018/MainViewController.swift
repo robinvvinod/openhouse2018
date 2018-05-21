@@ -9,8 +9,9 @@
 import UIKit
 import Cards
 import SwiftMessages
+import SafariServices
 
-class MainViewController: UIViewController, UISearchBarDelegate {
+class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate {
     
 	@IBOutlet weak var searchBar: UISearchBar!
 	@IBOutlet weak var gradientView: UIView!
@@ -69,8 +70,10 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         aboutSST.subtitleSize = 16
         aboutSST.hasParallax = false
         
-        let aboutSSTVC = storyboard!.instantiateViewController(withIdentifier: "aboutSSTVC")
-        aboutSST.shouldPresent(aboutSSTVC, from: self, fullscreen: true)
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedAbout(sender:)))
+        tapRecognizer.delegate = self
+        self.aboutSST.addGestureRecognizer(tapRecognizer)
+        self.aboutSST.isUserInteractionEnabled = true
         
         // Coming Next
         
@@ -138,25 +141,51 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         redemption.shouldPresent(redemptionVC, from: self, fullscreen: true)
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
         
-    override var prefersStatusBarHidden: Bool {
-        return true
+        // Handling UI and cosmetic changes when view refreshes after exiting a page
+        
+        searchBar.text = ""
+        aboutSST.play()
     }
 	
+    // Redirecting to in-app Safari to display search query
+    
 	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
 		var searchTerm = searchBar.text
 		searchTerm = searchTerm?.replacingOccurrences(of: " ", with: "+")
 		let url = URL(string: "http://www.sst.edu.sg/?s="+searchTerm!)!
+        let webPage = SFSafariViewController(url: url)
 		
 		searchBar.resignFirstResponder()
 		
-		UIApplication.shared.open(url, options: [:], completionHandler: nil)
-		print("clicked")
+		self.present(webPage, animated: true, completion: nil)
 	}
+    
+    // Redirecting to in-app Safari to display About SST page
+    
+    @objc func tappedAbout(sender: UITapGestureRecognizer) {
+        
+        let url = URL(string: "http://www.sst.edu.sg/our-school/about-sst/")!
+        let webPage = SFSafariViewController(url: url)
+        self.present(webPage, animated: true, completion: nil)
+    }
 	
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // Redirecting to in-app Safari to display sstinc.org
+    
+    @IBAction func sstIncSocialButton(_ sender: Any) {
+        
+        let url = URL(string: "https://www.sstinc.org/")!
+        let webPage = SFSafariViewController(url: url)
+        self.present(webPage, animated: true, completion: nil)
+    }
+    
+    // Hide status bar in main page
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
 }
