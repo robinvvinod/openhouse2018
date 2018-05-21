@@ -10,9 +10,10 @@ import UIKit
 import Cards
 import SwiftMessages
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UISearchBarDelegate {
     
-    @IBOutlet weak var gradientView: UIView!
+	@IBOutlet weak var searchBar: UISearchBar!
+	@IBOutlet weak var gradientView: UIView!
     @IBOutlet var comingnext: CardHighlight!
     @IBOutlet var aboutSST: CardPlayer!
     @IBOutlet var schedule: CardHighlight!
@@ -22,6 +23,9 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		searchBar.delegate = self
+		self.hideKeyboard()
         
         // Display instructions if first launch
         
@@ -138,7 +142,18 @@ class MainViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
+	
+	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+		var searchTerm = searchBar.text
+		searchTerm = searchTerm?.replacingOccurrences(of: " ", with: "+")
+		let url = URL(string: "http://www.sst.edu.sg/?s="+searchTerm!)!
+		
+		searchBar.resignFirstResponder()
+		
+		UIApplication.shared.open(url, options: [:], completionHandler: nil)
+		print("clicked")
+	}
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -146,4 +161,19 @@ class MainViewController: UIViewController {
     
 }
 
-
+extension UIViewController
+{
+	func hideKeyboard()
+	{
+		let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+			target: self,
+			action: #selector(UIViewController.dismissKeyboard))
+		
+		view.addGestureRecognizer(tap)
+	}
+	
+	@objc func dismissKeyboard()
+	{
+		view.endEditing(true)
+	}
+}

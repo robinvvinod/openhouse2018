@@ -84,6 +84,7 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
         
         alert.addTextField { (textField) in
             textField.text = ""
+			textField.autocapitalizationType = .allCharacters
         }
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
@@ -150,7 +151,7 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
                     exceedError.configureTheme(.error)
                     exceedError.configureDropShadow()
                     exceedError.button?.isHidden = true
-                    exceedError.configureContent(title: "Error", body: "You cannot redeem more than 10 codes.")
+                    exceedError.configureContent(title: "Alert", body: "We’re glad you’re enjoying the Open House but you can’t redeem more than 10 codes")
                     SwiftMessages.show(view: exceedError)
                 }
             }
