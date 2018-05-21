@@ -88,8 +88,8 @@ class MainViewController: UIViewController, UISearchBarDelegate {
         // Schedule
         
         schedule.backgroundImage = UIImage(named: "mapBg")
-        schedule.title = "Activites"
-        schedule.itemTitle = "See the activities \n going on"
+        schedule.title = "Schedule"
+        schedule.itemTitle = "See the activities \ngoing on"
         schedule.itemSubtitle = ""
         schedule.textColor = UIColor.white
         
