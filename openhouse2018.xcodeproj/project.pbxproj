@@ -22,7 +22,6 @@
 		2E95E79020807C7100D6801E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95E78F20807C7100D6801E /* MapViewController.swift */; };
 		2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA40B592004F1B5008364A8 /* MainViewController.swift */; };
 		2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */; };
-		2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */; };
 		2EF4F44A207F92000037CB7C /* ComingNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F449207F92000037CB7C /* ComingNextViewController.swift */; };
 		2EF4F44C207F92FE0037CB7C /* BoothsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */; };
 		47E0C8B598DAF228EB5D889F /* Pods_openhouse2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A0F24F33801605794CB49 /* Pods_openhouse2018.framework */; };
@@ -70,7 +69,6 @@
 		2EA40B592004F1B5008364A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		2ED66DBB203672BC540BBF92 /* Pods_openhouse2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSSTViewController.swift; sourceTree = "<group>"; };
 		2EF4F449207F92000037CB7C /* ComingNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingNextViewController.swift; sourceTree = "<group>"; };
 		2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsViewController.swift; sourceTree = "<group>"; };
 		33B9947A7A2ED3C541B57B09 /* Pods-openhouse2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 				2E8866FC200475D20090BCAF /* AppDelegate.swift */,
 				2E2E4DBB20859EB600E13691 /* Reachability.swift */,
 				2EA40B592004F1B5008364A8 /* MainViewController.swift */,
-				2ED834532005CDCF00EDF91D /* AboutSSTViewController.swift */,
 				2EF4F449207F92000037CB7C /* ComingNextViewController.swift */,
 				1DB7C6A620918B0200C53FBF /* Booths */,
 				2E95E78F20807C7100D6801E /* MapViewController.swift */,
@@ -444,7 +441,6 @@
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
 				2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */,
 				1DB7C6A820918B1900C53FBF /* BoothsData.swift in Sources */,
-				2ED834542005CDCF00EDF91D /* AboutSSTViewController.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
 				2E7E68E520A934950059732C /* RedemptionViewController.swift in Sources */,
 				2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */,
