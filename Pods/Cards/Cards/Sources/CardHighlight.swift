@@ -196,11 +196,6 @@ import UIKit
         bgIconIV.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/6))
         bgIconIV.layer.cornerRadius = iconRadius * 2
         
-        actionBtn.frame = CGRect(x: gimme.RevX(0, width: btnWidth) - insets,
-                                 y: gimme.RevY(0, height: 32) - insets,
-                                 width: btnWidth,
-                                 height: 32)
-        actionBtn.layer.cornerRadius = actionBtn.layer.bounds.height/2
     }
    
     //Actions

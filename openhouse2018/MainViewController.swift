@@ -21,12 +21,37 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
     @IBOutlet var map: CardHighlight!
     @IBOutlet var booths: CardHighlight!
     @IBOutlet var redemption: CardHighlight!
+    @IBOutlet var facebookShare: UIImageView!
+    @IBOutlet var twitterShare: UIImageView!
+    @IBOutlet var instagramShare: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 		
+        // Initialisation
+        
+        // -------------------------------------------------------------------
+        
 		searchBar.delegate = self
 		self.hideKeyboard()
+        
+        // Facebook
+        let fbRecogniser = UITapGestureRecognizer(target: self, action: #selector(facebook(sender:)))
+        fbRecogniser.delegate = self
+        self.facebookShare.addGestureRecognizer(fbRecogniser)
+        self.facebookShare.isUserInteractionEnabled = true
+        
+        // Twitter
+        let twitterRecogniser = UITapGestureRecognizer(target: self, action: #selector(twitter(sender:)))
+        twitterRecogniser.delegate = self
+        self.twitterShare.addGestureRecognizer(twitterRecogniser)
+        self.twitterShare.isUserInteractionEnabled = true
+        
+        // Instagram
+        let instagramRecogniser = UITapGestureRecognizer(target: self, action: #selector(instagram(sender:)))
+        instagramRecogniser.delegate = self
+        self.instagramShare.addGestureRecognizer(instagramRecogniser)
+        self.instagramShare.isUserInteractionEnabled = true
         
         // Display instructions if first launch
         
@@ -50,6 +75,9 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
             SwiftMessages.show(view: internetAlert)
             
         }
+        
+        // -------------------------------------------------------------------
+
         
         // About SST
         
@@ -79,7 +107,7 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         
         comingnext.backgroundImage = UIImage(named: "comingupnextBg")
         comingnext.title = "Coming up next"
-        comingnext.itemTitle = "Activities that are starting soon:"
+        comingnext.itemTitle = "Activities that are starting soon"
         comingnext.itemSubtitle = ""
         comingnext.textColor = UIColor.white
         
@@ -90,8 +118,8 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         
         // Schedule
         
-        schedule.backgroundImage = UIImage(named: "mapBg")
-        schedule.title = "Schedule"
+        schedule.backgroundImage = UIImage(named: "activitiesBg")
+        schedule.title = "Activities"
         schedule.itemTitle = "See the activities \ngoing on"
         schedule.itemSubtitle = ""
         schedule.textColor = UIColor.white
@@ -116,7 +144,7 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         
         // Booths
         
-        booths.backgroundImage = UIImage(named: "mapBg")
+        booths.backgroundImage = UIImage(named: "boothsBg")
         booths.title = "Booths"
         booths.itemTitle = "Check out the booths\naround the school"
         booths.itemSubtitle = ""
@@ -129,7 +157,7 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         
         // Redemption
         
-        redemption.backgroundImage = UIImage(named: "mapBg")
+        redemption.backgroundImage = UIImage(named: "redemptionBg")
         redemption.title = "Redemption"
         redemption.itemTitle = "Collect codes at booths\nto win attractive prizes!"
         redemption.itemSubtitle = ""
@@ -150,7 +178,7 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         aboutSST.play()
     }
 	
-    // Redirecting to in-app Safari to display search query
+    // Displaying search query
     
 	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
@@ -164,7 +192,7 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
 		self.present(webPage, animated: true, completion: nil)
 	}
     
-    // Redirecting to in-app Safari to display About SST page
+    // About SST Web Page
     
     @objc func tappedAbout(sender: UITapGestureRecognizer) {
         
@@ -172,12 +200,49 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         let webPage = SFSafariViewController(url: url)
         self.present(webPage, animated: true, completion: nil)
     }
+    
+    // SOCIAL BUTTONS
+    
+    // -----------------------------------------------------------------------
+    
+    // Facebook
+    
+    @objc func facebook(sender: UITapGestureRecognizer) {
+        let url = URL(string: "https://www.facebook.com/ssts.1technologydrive/")!
+        let webPage = SFSafariViewController(url: url)
+        self.present(webPage, animated: true, completion: nil)
+    }
+    
+    // Twitter
+    
+    @objc func twitter(sender: UITapGestureRecognizer) {
+        let url = URL(string: "https://twitter.com/sstsingapore?lang=en")!
+        let webPage = SFSafariViewController(url: url)
+        self.present(webPage, animated: true, completion: nil)
+    }
+    
+    // Instagram
+    
+    @objc func instagram(sender: UITapGestureRecognizer) {
+        let url = URL(string: "https://www.instagram.com/sstudents.life/?hl=en")!
+        let webPage = SFSafariViewController(url: url)
+        self.present(webPage, animated: true, completion: nil)
+    }
 	
-    // Redirecting to in-app Safari to display sstinc.org
+    // sstinc.org
     
     @IBAction func sstIncSocialButton(_ sender: Any) {
-        
         let url = URL(string: "https://www.sstinc.org/")!
+        let webPage = SFSafariViewController(url: url)
+        self.present(webPage, animated: true, completion: nil)
+    }
+    
+    // ----------------------------------------------------------------------
+    
+    // Feedback Form
+    
+    @IBAction func feedbackForm(_ sender: Any) {
+        let url = URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSfo3PkCCZWkkbqoxOQZbHvVRMv38NNl6Hzlw49tItABJrlUog/viewform")!
         let webPage = SFSafariViewController(url: url)
         self.present(webPage, animated: true, completion: nil)
     }
