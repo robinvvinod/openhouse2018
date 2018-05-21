@@ -26,112 +26,134 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-d2-0LV">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2657"/>
                                         <subviews>
-                                            <searchBar contentMode="redraw" fixedFrame="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Jhc-FT-k2P">
+                                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Jhc-FT-k2P">
                                                 <rect key="frame" x="22" y="28" width="330" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfP-RA-ajy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfP-RA-ajy">
                                                 <rect key="frame" x="28" y="95" width="300" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardPlayer" customModule="Cards">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardPlayer" customModule="Cards">
                                                 <rect key="frame" x="27" y="203" width="320" height="280"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardHighlight" customModule="Cards">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardHighlight" customModule="Cards">
                                                 <rect key="frame" x="27" y="513" width="320" height="384"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-Rt-LjU" customClass="CardHighlight" customModule="Cards">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-Rt-LjU" customClass="CardHighlight" customModule="Cards">
                                                 <rect key="frame" x="27" y="927" width="320" height="384"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBE-Sq-hA2" customClass="CardHighlight" customModule="Cards">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBE-Sq-hA2" customClass="CardHighlight" customModule="Cards">
                                                 <rect key="frame" x="27" y="1341" width="320" height="384"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AzF-2f-8BG" customClass="CardHighlight" customModule="Cards">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AzF-2f-8BG" customClass="CardHighlight" customModule="Cards">
                                                 <rect key="frame" x="27" y="1755" width="320" height="384"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hwF-ld-gIM" customClass="CardHighlight" customModule="Cards">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hwF-ld-gIM" customClass="CardHighlight" customModule="Cards">
                                                 <rect key="frame" x="27" y="2169" width="320" height="384"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" text="#SSTOH18." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqS-Le-5YB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#SSTOH18 😀" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqS-Le-5YB">
                                                 <rect key="frame" x="28" y="129" width="174" height="57"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-wD-nSn">
-                                                <rect key="frame" x="0.0" y="2583" width="375" height="33"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-wD-nSn">
+                                                <rect key="frame" x="0.0" y="2662" width="375" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                <state key="normal" title="Made with ❤️ by SST Inc.">
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Made by SST Inc.">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="sstIncSocialButton:" destination="wFM-4L-q0z" eventType="touchUpInside" id="Ry9-Ln-QXh"/>
                                                 </connections>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="jcE-qv-lgi">
+                                                <rect key="frame" x="143" y="2626" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="KTr-1o-uRL">
+                                                <rect key="frame" x="171" y="2625" width="30" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="ruQ-x8-6w9">
+                                                <rect key="frame" x="206" y="2625" width="30" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-hD-evc">
+                                                <rect key="frame" x="113" y="2583" width="148" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Leave Feedback? 🍿 "/>
+                                                <connections>
+                                                    <action selector="feedbackForm:" destination="wFM-4L-q0z" eventType="touchUpInside" id="vq0-83-JHV"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="2657" id="u0w-rJ-WwN"/>
+                                            <constraint firstAttribute="height" constant="2707" id="auV-8s-WsH"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="x3r-d2-0LV" firstAttribute="width" secondItem="AbM-A2-O8E" secondAttribute="width" id="1ao-am-lF5"/>
-                                    <constraint firstItem="x3r-d2-0LV" firstAttribute="leading" secondItem="AbM-A2-O8E" secondAttribute="leading" id="PsC-Nv-mnW"/>
-                                    <constraint firstAttribute="bottom" secondItem="x3r-d2-0LV" secondAttribute="bottom" id="R6C-80-nHU"/>
-                                    <constraint firstAttribute="trailing" secondItem="x3r-d2-0LV" secondAttribute="trailing" id="XYO-an-hq8"/>
-                                    <constraint firstItem="x3r-d2-0LV" firstAttribute="top" secondItem="AbM-A2-O8E" secondAttribute="top" id="ZkB-Nw-QuV"/>
+                                    <constraint firstItem="x3r-d2-0LV" firstAttribute="leading" secondItem="AbM-A2-O8E" secondAttribute="leading" id="Brc-Hl-dR4"/>
+                                    <constraint firstItem="x3r-d2-0LV" firstAttribute="width" secondItem="AbM-A2-O8E" secondAttribute="width" id="Jvl-gE-aYg"/>
+                                    <constraint firstAttribute="bottom" secondItem="x3r-d2-0LV" secondAttribute="bottom" id="TdZ-RS-0qA"/>
+                                    <constraint firstItem="x3r-d2-0LV" firstAttribute="top" secondItem="AbM-A2-O8E" secondAttribute="top" id="V9n-tp-SKz"/>
+                                    <constraint firstAttribute="trailing" secondItem="x3r-d2-0LV" secondAttribute="trailing" id="sUQ-80-I5E"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.96862745098039216" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="AbM-A2-O8E" firstAttribute="leading" secondItem="4CN-HP-1hR" secondAttribute="leading" id="GoP-Vo-Oz9"/>
-                            <constraint firstItem="AbM-A2-O8E" firstAttribute="bottom" secondItem="4CN-HP-1hR" secondAttribute="bottom" id="JCY-zA-sgH"/>
-                            <constraint firstItem="AbM-A2-O8E" firstAttribute="top" secondItem="SFE-ZR-sJi" secondAttribute="top" id="O0B-I0-tJh"/>
-                            <constraint firstItem="AbM-A2-O8E" firstAttribute="trailing" secondItem="4CN-HP-1hR" secondAttribute="trailing" id="RT2-pU-1D6"/>
+                            <constraint firstItem="AbM-A2-O8E" firstAttribute="bottom" secondItem="4CN-HP-1hR" secondAttribute="bottom" id="LTm-0V-21c"/>
+                            <constraint firstItem="AbM-A2-O8E" firstAttribute="trailing" secondItem="4CN-HP-1hR" secondAttribute="trailing" id="Opq-5W-gMV"/>
+                            <constraint firstItem="AbM-A2-O8E" firstAttribute="top" secondItem="SFE-ZR-sJi" secondAttribute="top" id="Pkx-Yj-tEe"/>
+                            <constraint firstItem="AbM-A2-O8E" firstAttribute="leading" secondItem="4CN-HP-1hR" secondAttribute="leading" id="mRu-P0-4sJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4CN-HP-1hR"/>
                     </view>
-                    <size key="freeformSize" width="375" height="2657"/>
+                    <size key="freeformSize" width="375" height="2707"/>
                     <connections>
                         <outlet property="aboutSST" destination="LgU-cU-v49" id="iQg-Tr-uWt"/>
                         <outlet property="booths" destination="iBE-Sq-hA2" id="DFx-Ji-H1p"/>
                         <outlet property="comingnext" destination="z3g-Ck-8Ti" id="tqu-PD-Z5l"/>
+                        <outlet property="facebookShare" destination="jcE-qv-lgi" id="pvg-R2-Kau"/>
                         <outlet property="gradientView" destination="x3r-d2-0LV" id="Tmd-S5-i10"/>
+                        <outlet property="instagramShare" destination="ruQ-x8-6w9" id="vn3-Xj-G6x"/>
                         <outlet property="map" destination="AzF-2f-8BG" id="QNb-H6-JGQ"/>
                         <outlet property="redemption" destination="hwF-ld-gIM" id="zUB-X6-TnG"/>
                         <outlet property="schedule" destination="XP6-Rt-LjU" id="GOR-RG-sLW"/>
                         <outlet property="searchBar" destination="Jhc-FT-k2P" id="WkA-oY-cfw"/>
+                        <outlet property="twitterShare" destination="KTr-1o-uRL" id="DCk-Gn-5ZC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWH-CF-fQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47" y="35"/>
+            <point key="canvasLocation" x="45.600000000000001" y="34.632683658170919"/>
         </scene>
         <!--AboutSST View Controller-->
         <scene sceneID="c0X-b9-2Sd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8D6-wf-MZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="aboutSSTVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lsg-ig-ueZ" customClass="AboutSSTViewController" customModule="openhouse2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PAO-Ag-drY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -140,6 +162,7 @@
                         <viewLayoutGuide key="safeArea" id="3fD-xW-LFZ"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8D6-wf-MZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1512.8" y="31.934032983508249"/>
         </scene>
@@ -290,7 +313,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-mR-Q1c">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-mR-Q1c">
                                 <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -492,5 +515,8 @@
     </scenes>
     <resources>
         <image name="code0" width="751" height="2920"/>
+        <image name="facebook" width="618" height="916"/>
+        <image name="instagram" width="1600" height="1600"/>
+        <image name="twitter" width="618" height="618"/>
     </resources>
 </document>
