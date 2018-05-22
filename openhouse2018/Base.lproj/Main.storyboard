@@ -323,53 +323,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qD-hi-V7G">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-QY-WMd">
                                 <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8H1-AA-1Yn">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapImg" translatesAutoresizingMaskIntoConstraints="NO" id="U29-X8-QDE">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapImg" translatesAutoresizingMaskIntoConstraints="NO" id="sGa-WC-Luc">
-                                                <rect key="frame" x="0.0" y="0.0" width="2861" height="7705"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="sGa-WC-Luc" secondAttribute="bottom" id="LSt-FG-Yky"/>
-                                            <constraint firstItem="sGa-WC-Luc" firstAttribute="leading" secondItem="8H1-AA-1Yn" secondAttribute="leading" id="df8-7i-BiC"/>
-                                            <constraint firstAttribute="trailing" secondItem="sGa-WC-Luc" secondAttribute="trailing" id="fIs-Ie-vfT"/>
-                                            <constraint firstItem="sGa-WC-Luc" firstAttribute="top" secondItem="8H1-AA-1Yn" secondAttribute="top" id="oB0-n1-F83"/>
-                                        </constraints>
-                                    </scrollView>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="8H1-AA-1Yn" secondAttribute="bottom" id="AgA-Ta-DsP"/>
-                                    <constraint firstItem="8H1-AA-1Yn" firstAttribute="top" secondItem="9qD-hi-V7G" secondAttribute="top" id="DSk-Kl-LdL"/>
-                                    <constraint firstAttribute="trailing" secondItem="8H1-AA-1Yn" secondAttribute="trailing" id="eWi-tZ-ZHY"/>
-                                    <constraint firstItem="8H1-AA-1Yn" firstAttribute="leading" secondItem="9qD-hi-V7G" secondAttribute="leading" id="zEq-p2-94z"/>
-                                </constraints>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UV7-Os-srC" firstAttribute="trailing" secondItem="LYa-2g-W7m" secondAttribute="trailing" id="1kl-sy-eyx"/>
-                            <constraint firstItem="DmE-RS-9a2" firstAttribute="top" secondItem="9qD-hi-V7G" secondAttribute="bottom" id="9QC-pn-8Kx"/>
                             <constraint firstItem="LYa-2g-W7m" firstAttribute="top" secondItem="Oyw-xP-Hdw" secondAttribute="bottom" id="bYH-6p-ZKT"/>
-                            <constraint firstItem="9qD-hi-V7G" firstAttribute="leading" secondItem="UV7-Os-srC" secondAttribute="leading" id="eKK-5k-3dH"/>
+                            <constraint firstItem="ue1-QY-WMd" firstAttribute="leading" secondItem="UV7-Os-srC" secondAttribute="leading" id="dhI-ki-lUe"/>
                             <constraint firstItem="LYa-2g-W7m" firstAttribute="leading" secondItem="Ij1-8C-ffS" secondAttribute="leading" id="fIv-3x-eF8"/>
-                            <constraint firstItem="UV7-Os-srC" firstAttribute="trailing" secondItem="9qD-hi-V7G" secondAttribute="trailing" id="oiO-20-O3s"/>
-                            <constraint firstItem="9qD-hi-V7G" firstAttribute="top" secondItem="LYa-2g-W7m" secondAttribute="bottom" constant="8" id="vH9-io-5aM"/>
+                            <constraint firstItem="ue1-QY-WMd" firstAttribute="top" secondItem="LYa-2g-W7m" secondAttribute="bottom" constant="8" id="gSA-Nt-bT4"/>
+                            <constraint firstItem="ue1-QY-WMd" firstAttribute="trailing" secondItem="UV7-Os-srC" secondAttribute="trailing" id="pK5-bm-4ig"/>
+                            <constraint firstItem="DmE-RS-9a2" firstAttribute="top" secondItem="ue1-QY-WMd" secondAttribute="bottom" id="xk8-eO-Mqm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UV7-Os-srC"/>
                     </view>
                     <connections>
-                        <outlet property="bottomMapViewConstraint" destination="LSt-FG-Yky" id="K3q-o0-S8C"/>
-                        <outlet property="boundView" destination="9qD-hi-V7G" id="tpE-6q-uPA"/>
-                        <outlet property="leadingMapViewConstraint" destination="df8-7i-BiC" id="AOC-De-SJy"/>
-                        <outlet property="mapScrollView" destination="8H1-AA-1Yn" id="JhK-vg-ajn"/>
-                        <outlet property="mapView" destination="sGa-WC-Luc" id="6PS-Ng-PMX"/>
-                        <outlet property="topMapViewConstraint" destination="oB0-n1-F83" id="LBa-Fj-nCT"/>
-                        <outlet property="trailingMapViewConstraint" destination="fIs-Ie-vfT" id="Mji-Cm-9uF"/>
+                        <outlet property="mapScrollView" destination="ue1-QY-WMd" id="kik-uG-gl3"/>
+                        <outlet property="mapView" destination="U29-X8-QDE" id="LM2-aa-f9K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9A-TX-AcL" userLabel="First Responder" sceneMemberID="firstResponder"/>

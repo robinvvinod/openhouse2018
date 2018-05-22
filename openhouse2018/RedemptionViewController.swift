@@ -64,16 +64,42 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func tappedImage(_ sender: AnyObject) {
+        
         SwiftMessages.defaultConfig.presentationStyle = .center
         SwiftMessages.defaultConfig.duration = .seconds(seconds: 5)
         let slInfo = MessageView.viewFromNib(layout: .centeredView)
         slInfo.configureTheme(.warning)
         slInfo.configureDropShadow()
         slInfo.button?.setTitle("Mark as redeemed", for: .normal)
+        
         slInfo.buttonTapHandler = {
-            _ in UserDefaults.standard.set(true, forKey: "redeemed")
+            _ in
             SwiftMessages.hide()
+            
+            // Ask for SL password
+            
+            let alert = UIAlertController(title: "Confirmation", message: "Enter the Confirmation Code (SLs)", preferredStyle: .alert)
+            
+            alert.addTextField { (textField) in
+                textField.text = ""
+                textField.keyboardType = UIKeyboardType.numberPad
+            }
+            
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+            alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { [weak alert] (_) in
+                
+                // Checking code entered
+                
+                if alert?.textFields![0].text == "1932" {
+                    UserDefaults.standard.set(true, forKey: "redeemed")
+                }
+                
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
         }
+        
         slInfo.configureContent(title: "Information for SLs", body: "DSA registration done? :   \(UserDefaults.standard.bool(forKey: "dsadone"))\nRedeemed Before? :    \(UserDefaults.standard.bool(forKey: "redeemed"))\n")
         SwiftMessages.show(view: slInfo)
     }
@@ -173,9 +199,4 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
         SwiftMessages.show(view: internetAlert)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
