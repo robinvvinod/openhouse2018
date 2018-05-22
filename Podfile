@@ -6,7 +6,6 @@ target 'openhouse2018' do
   use_frameworks!
 
   # Pods for openhouse2018
-  pod 'Cards'  
   pod 'SwiftMessages'
   pod 'Firebase'
   pod 'Firebase/Database'
@@ -22,3 +21,4 @@ target 'openhouse2018' do
   end
 
 end
+

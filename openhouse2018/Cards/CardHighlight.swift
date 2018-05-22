@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable open class CardHighlight: Card {
-
+    
     /**
      Text of the title label.
      */
@@ -90,7 +90,7 @@ import UIKit
         super.init(frame: frame)
         initialize()
     }
-
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
@@ -111,7 +111,7 @@ import UIKit
         else { bgIconIV.alpha = 0 }
     }
     
-  
+    
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
         
@@ -140,7 +140,7 @@ import UIKit
         itemTitleLbl.minimumScaleFactor = 0.1
         itemTitleLbl.lineBreakMode = .byTruncatingTail
         itemTitleLbl.numberOfLines = 0
-
+        
         itemSubtitleLbl.textColor = textColor
         itemSubtitleLbl.text = itemSubtitle
         itemSubtitleLbl.font = UIFont.systemFont(ofSize: itemSubtitleSize)
@@ -197,7 +197,7 @@ import UIKit
         bgIconIV.layer.cornerRadius = iconRadius * 2
         
     }
-   
+    
     //Actions
     
     @objc  func buttonTapped(){

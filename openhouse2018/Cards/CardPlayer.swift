@@ -8,10 +8,9 @@
 
 import Foundation
 import UIKit
-import Player
 
 @IBDesignable open class CardPlayer: Card {
-
+    
     /**
      Text of the title label.
      */
@@ -84,7 +83,7 @@ import Player
             player.url = videoSource
         }
     }
-
+    
     /**
      Required. View controller that should display the player.
      */
@@ -93,20 +92,20 @@ import Player
     }
     
     private var player = Player() // Player provided by Patrik Piemonte
-
+    
     private var titleLbl = UILabel ()
     private var subtitleLbl = UILabel()
     private var playPauseV = UIVisualEffectView()
     private var playIV = UIImageView()
     private var playerCoverIV = UIImageView()
     private var categoryLbl = UILabel()
-
+    
     // View Life Cycle
     public override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
     }
-
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
@@ -127,7 +126,7 @@ import Player
         player.fillMode = PlayerFillMode.resizeAspectFill.avFoundationType
         if let url = videoSource { player.url = url }
         
-       
+        
         backgroundIV.addSubview(self.player.view)
         playPauseV.contentView.addSubview(playIV)
         playPauseV.contentView.bringSubview(toFront: playIV)
@@ -145,7 +144,7 @@ import Player
     
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
-    
+        
         if let cover = playerCover {
             playerCoverIV.image = cover
         }
@@ -276,7 +275,7 @@ import Player
         if touches.first?.view == player.view || touches.first?.view == playPauseV.contentView { playerTapped() }
         else { super.touchesBegan(touches, with: event) }
     }
-
+    
 }
 
 

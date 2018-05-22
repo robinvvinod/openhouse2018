@@ -8,7 +8,7 @@
 import UIKit
 
 class Animator: NSObject, UIViewControllerAnimatedTransitioning {
-
+    
     
     fileprivate var presenting: Bool
     fileprivate var velocity = 0.6
@@ -67,10 +67,10 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
                 
                 detailVC.layout(self.card.originalFrame, isPresenting: false)
                 self.card.delegate?.cardIsHidingDetail?(card: self.card)
-                })
+            })
             }
             return
-
+            
         }
         
         // Detail View Controller Present Animations
@@ -107,11 +107,11 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
             self.card.delegate?.cardIsShowingDetail?(card: self.card)
             
         }) { _ in UIView.animate(withDuration: self.velocity/2, delay: 0, options: .curveEaseOut, animations: {
-                
+            
             detailVC.layout(detailVC.view.frame, isPresenting: true)
             self.card.delegate?.cardIsShowingDetail?(card: self.card)
-                
-            })
+            
+        })
         }
         
     }
@@ -129,7 +129,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         
         return CGAffineTransform(translationX: xMove, y: yMove)
     }
-
+    
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return velocity
