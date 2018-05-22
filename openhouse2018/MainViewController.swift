@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Cards
 import SwiftMessages
 import SafariServices
 
@@ -82,11 +81,10 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         // About SST
         
         aboutSST.textColor = UIColor.black
-        aboutSST.videoSource = URL(fileURLWithPath: Bundle.main.path(forResource: "video", ofType:"mp4")!)
-        aboutSST.shouldDisplayPlayer(from: self)
-        
         aboutSST.playerCover = UIImage(named: "sstsketch")!
         aboutSST.playImage = UIImage(named: "CardPlayerPlayIcon")!
+        aboutSST.videoSource = URL(fileURLWithPath: Bundle.main.path(forResource: "video", ofType:"mp4")!)
+        aboutSST.shouldDisplayPlayer(from: self)
         
         aboutSST.isAutoplayEnabled = true
         aboutSST.shouldRestartVideoWhenPlaybackEnds = true
@@ -228,7 +226,7 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         let webPage = SFSafariViewController(url: url)
         self.present(webPage, animated: true, completion: nil)
     }
-	
+    	
     // sstinc.org
     
     @IBAction func sstIncSocialButton(_ sender: Any) {

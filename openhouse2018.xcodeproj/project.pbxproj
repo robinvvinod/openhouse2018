@@ -3,14 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3D8916062345F988184876 /* Pods_openhouse2018UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7773A3B07D55484576D2E82C /* Pods_openhouse2018UITests.framework */; };
 		1D1D8B6F20B1C2F900B2EACD /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D8B6E20B1C2F900B2EACD /* ScheduleData.swift */; };
 		1DB7C6A820918B1900C53FBF /* BoothsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7C6A720918B1900C53FBF /* BoothsData.swift */; };
 		2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E10DEA3206CE35F00F979C7 /* video.mp4 */; };
 		2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E4DBB20859EB600E13691 /* Reachability.swift */; };
+		2E712EC720B432FE0009861C /* Player_by_Patric_Piemonte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712EC620B432FE0009861C /* Player_by_Patric_Piemonte.swift */; };
+		2E712ED120B433080009861C /* CardArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712EC820B433070009861C /* CardArticle.swift */; };
+		2E712ED220B433080009861C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712EC920B433070009861C /* Card.swift */; };
+		2E712ED320B433080009861C /* CardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712ECA20B433070009861C /* CardGroup.swift */; };
+		2E712ED420B433080009861C /* CardHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712ECB20B433070009861C /* CardHighlight.swift */; };
+		2E712ED520B433080009861C /* CardGroupSliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712ECC20B433070009861C /* CardGroupSliding.swift */; };
+		2E712ED620B433080009861C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712ECD20B433070009861C /* Animator.swift */; };
+		2E712ED720B433080009861C /* CardPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712ECE20B433070009861C /* CardPlayer.swift */; };
+		2E712ED820B433080009861C /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712ECF20B433070009861C /* LayoutHelper.swift */; };
+		2E712ED920B433080009861C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E712ED020B433080009861C /* DetailViewController.swift */; };
 		2E7E68E520A934950059732C /* RedemptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E68E420A934950059732C /* RedemptionViewController.swift */; };
 		2E7E68E720A93EE30059732C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E68E620A93EE20059732C /* Assets.xcassets */; };
 		2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8866FC200475D20090BCAF /* AppDelegate.swift */; };
@@ -24,9 +35,8 @@
 		2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */; };
 		2EF4F44A207F92000037CB7C /* ComingNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F449207F92000037CB7C /* ComingNextViewController.swift */; };
 		2EF4F44C207F92FE0037CB7C /* BoothsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */; };
-		47E0C8B598DAF228EB5D889F /* Pods_openhouse2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A0F24F33801605794CB49 /* Pods_openhouse2018.framework */; };
-		7DB2AE55A577028E687982F7 /* Pods_openhouse2018UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED66DBB203672BC540BBF92 /* Pods_openhouse2018UITests.framework */; };
-		D321298920AABC1A9BA5A9B3 /* Pods_openhouse2018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBE631AE2E471C4F7FCF13E /* Pods_openhouse2018Tests.framework */; };
+		311C602F103B758CB06008E3 /* Pods_openhouse2018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A125643DB66F18FA6271FB /* Pods_openhouse2018Tests.framework */; };
+		D6DD6072F8300CACEA1B9658 /* Pods_openhouse2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C17E8C73BC25B8DD18EDE1 /* Pods_openhouse2018.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +57,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1541F807258B44D8A8ABAABF /* Pods-openhouse2018Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1D1D8B6E20B1C2F900B2EACD /* ScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
 		1DB7C6A720918B1900C53FBF /* BoothsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsData.swift; sourceTree = "<group>"; };
 		2E10DEA3206CE35F00F979C7 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		2E2E4DBB20859EB600E13691 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		2E712EC620B432FE0009861C /* Player_by_Patric_Piemonte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player_by_Patric_Piemonte.swift; sourceTree = "<group>"; };
+		2E712EC820B433070009861C /* CardArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardArticle.swift; sourceTree = "<group>"; };
+		2E712EC920B433070009861C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2E712ECA20B433070009861C /* CardGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGroup.swift; sourceTree = "<group>"; };
+		2E712ECB20B433070009861C /* CardHighlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHighlight.swift; sourceTree = "<group>"; };
+		2E712ECC20B433070009861C /* CardGroupSliding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGroupSliding.swift; sourceTree = "<group>"; };
+		2E712ECD20B433070009861C /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		2E712ECE20B433070009861C /* CardPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPlayer.swift; sourceTree = "<group>"; };
+		2E712ECF20B433070009861C /* LayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		2E712ED020B433080009861C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2E7E68E420A934950059732C /* RedemptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionViewController.swift; sourceTree = "<group>"; };
 		2E7E68E620A93EE20059732C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8866F9200475D20090BCAF /* openhouse2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openhouse2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,17 +89,16 @@
 		2E95E78F20807C7100D6801E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2EA40B592004F1B5008364A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		2ED66DBB203672BC540BBF92 /* Pods_openhouse2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF4F449207F92000037CB7C /* ComingNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingNextViewController.swift; sourceTree = "<group>"; };
 		2EF4F44B207F92FE0037CB7C /* BoothsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothsViewController.swift; sourceTree = "<group>"; };
-		33B9947A7A2ED3C541B57B09 /* Pods-openhouse2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018.release.xcconfig"; sourceTree = "<group>"; };
-		4EBE631AE2E471C4F7FCF13E /* Pods_openhouse2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6601FF1E00E3D3A10C082C1E /* Pods-openhouse2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A34A0F24F33801605794CB49 /* Pods_openhouse2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB8C224A40E2B65D30CC7BFD /* Pods-openhouse2018Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B146C29F86C0FE40543A4906 /* Pods-openhouse2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018.debug.xcconfig"; sourceTree = "<group>"; };
-		B4D5CFF49CC2A51F0AE758C7 /* Pods-openhouse2018Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C2F632F0B5CFBED23692BD8A /* Pods-openhouse2018UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests.release.xcconfig"; sourceTree = "<group>"; };
+		61CDE0A14D69C628DB78A91E /* Pods-openhouse2018UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		698DEEA2D5AAECACE30E5DE5 /* Pods-openhouse2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018.release.xcconfig"; sourceTree = "<group>"; };
+		70A3EF1F24FA367F8D694BD6 /* Pods-openhouse2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018.debug.xcconfig"; sourceTree = "<group>"; };
+		7773A3B07D55484576D2E82C /* Pods_openhouse2018UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A125643DB66F18FA6271FB /* Pods_openhouse2018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C17E8C73BC25B8DD18EDE1 /* Pods_openhouse2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openhouse2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5193DF040521853F97AB89 /* Pods-openhouse2018UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests.release.xcconfig"; sourceTree = "<group>"; };
+		C319AABC51A2D276406D4488 /* Pods-openhouse2018Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openhouse2018Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E0C8B598DAF228EB5D889F /* Pods_openhouse2018.framework in Frameworks */,
+				D6DD6072F8300CACEA1B9658 /* Pods_openhouse2018.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D321298920AABC1A9BA5A9B3 /* Pods_openhouse2018Tests.framework in Frameworks */,
+				311C602F103B758CB06008E3 /* Pods_openhouse2018Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,13 +122,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DB2AE55A577028E687982F7 /* Pods_openhouse2018UITests.framework in Frameworks */,
+				0E3D8916062345F988184876 /* Pods_openhouse2018UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14BBCAA0CB0DB9119005C6D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A3EF1F24FA367F8D694BD6 /* Pods-openhouse2018.debug.xcconfig */,
+				698DEEA2D5AAECACE30E5DE5 /* Pods-openhouse2018.release.xcconfig */,
+				C319AABC51A2D276406D4488 /* Pods-openhouse2018Tests.debug.xcconfig */,
+				1541F807258B44D8A8ABAABF /* Pods-openhouse2018Tests.release.xcconfig */,
+				61CDE0A14D69C628DB78A91E /* Pods-openhouse2018UITests.debug.xcconfig */,
+				9F5193DF040521853F97AB89 /* Pods-openhouse2018UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1DB7C6A620918B0200C53FBF /* Booths */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +151,23 @@
 			path = Booths;
 			sourceTree = "<group>";
 		};
+		2E712EDA20B437590009861C /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				2E712EC620B432FE0009861C /* Player_by_Patric_Piemonte.swift */,
+				2E712ECD20B433070009861C /* Animator.swift */,
+				2E712EC920B433070009861C /* Card.swift */,
+				2E712EC820B433070009861C /* CardArticle.swift */,
+				2E712ECA20B433070009861C /* CardGroup.swift */,
+				2E712ECC20B433070009861C /* CardGroupSliding.swift */,
+				2E712ECB20B433070009861C /* CardHighlight.swift */,
+				2E712ECE20B433070009861C /* CardPlayer.swift */,
+				2E712ED020B433080009861C /* DetailViewController.swift */,
+				2E712ECF20B433070009861C /* LayoutHelper.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		2E8866F0200475D20090BCAF = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +175,8 @@
 				2E886710200475D20090BCAF /* openhouse2018Tests */,
 				2E88671B200475D20090BCAF /* openhouse2018UITests */,
 				2E8866FA200475D20090BCAF /* Products */,
-				5DF25E37310597FED817A385 /* Pods */,
-				C500CEA20A4DB10A25E219B7 /* Frameworks */,
+				14BBCAA0CB0DB9119005C6D3 /* Pods */,
+				9EECC83AFBD34CAE9C243906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +193,7 @@
 		2E8866FB200475D20090BCAF /* openhouse2018 */ = {
 			isa = PBXGroup;
 			children = (
+				2E712EDA20B437590009861C /* Cards */,
 				2E8866FC200475D20090BCAF /* AppDelegate.swift */,
 				2E2E4DBB20859EB600E13691 /* Reachability.swift */,
 				2EA40B592004F1B5008364A8 /* MainViewController.swift */,
@@ -188,25 +239,12 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		5DF25E37310597FED817A385 /* Pods */ = {
+		9EECC83AFBD34CAE9C243906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B146C29F86C0FE40543A4906 /* Pods-openhouse2018.debug.xcconfig */,
-				33B9947A7A2ED3C541B57B09 /* Pods-openhouse2018.release.xcconfig */,
-				AB8C224A40E2B65D30CC7BFD /* Pods-openhouse2018Tests.debug.xcconfig */,
-				B4D5CFF49CC2A51F0AE758C7 /* Pods-openhouse2018Tests.release.xcconfig */,
-				6601FF1E00E3D3A10C082C1E /* Pods-openhouse2018UITests.debug.xcconfig */,
-				C2F632F0B5CFBED23692BD8A /* Pods-openhouse2018UITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C500CEA20A4DB10A25E219B7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A34A0F24F33801605794CB49 /* Pods_openhouse2018.framework */,
-				4EBE631AE2E471C4F7FCF13E /* Pods_openhouse2018Tests.framework */,
-				2ED66DBB203672BC540BBF92 /* Pods_openhouse2018UITests.framework */,
+				95C17E8C73BC25B8DD18EDE1 /* Pods_openhouse2018.framework */,
+				95A125643DB66F18FA6271FB /* Pods_openhouse2018Tests.framework */,
+				7773A3B07D55484576D2E82C /* Pods_openhouse2018UITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,11 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E886721200475D30090BCAF /* Build configuration list for PBXNativeTarget "openhouse2018" */;
 			buildPhases = (
-				A560087E89B36B92A0864A6C /* [CP] Check Pods Manifest.lock */,
+				871D499BE43DEB01B7E5D5FF /* [CP] Check Pods Manifest.lock */,
 				2E8866F5200475D20090BCAF /* Sources */,
 				2E8866F6200475D20090BCAF /* Frameworks */,
 				2E8866F7200475D20090BCAF /* Resources */,
-				69B436466F79E189B2013D72 /* [CP] Embed Pods Frameworks */,
+				78B332690311A01F88657BEC /* [CP] Embed Pods Frameworks */,
+				F9FC52307C2E3DEC80ED89DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,10 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E886724200475D30090BCAF /* Build configuration list for PBXNativeTarget "openhouse2018Tests" */;
 			buildPhases = (
-				AAD2F1775218D3B21C880F3C /* [CP] Check Pods Manifest.lock */,
+				8F3D9FE7CE9897B4DD1CB9E5 /* [CP] Check Pods Manifest.lock */,
 				2E886709200475D20090BCAF /* Sources */,
 				2E88670A200475D20090BCAF /* Frameworks */,
 				2E88670B200475D20090BCAF /* Resources */,
+				4DABC390528C28A12D73B36E /* [CP] Embed Pods Frameworks */,
+				C0F148BAC1276D7E03577EA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,10 +297,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E886727200475D30090BCAF /* Build configuration list for PBXNativeTarget "openhouse2018UITests" */;
 			buildPhases = (
-				E2049BA9BAE97B0885F015EF /* [CP] Check Pods Manifest.lock */,
+				98F67F247B0154945626124E /* [CP] Check Pods Manifest.lock */,
 				2E886714200475D20090BCAF /* Sources */,
 				2E886715200475D20090BCAF /* Frameworks */,
 				2E886716200475D20090BCAF /* Resources */,
+				5A20C65EBA531E14DF53AD2B /* [CP] Embed Pods Frameworks */,
+				9DD9DC39176C98FFC732CD45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,7 +341,7 @@
 				};
 			};
 			buildConfigurationList = 2E8866F4200475D20090BCAF /* Build configuration list for PBXProject "openhouse2018" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -347,25 +390,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		69B436466F79E189B2013D72 /* [CP] Embed Pods Frameworks */ = {
+		4DABC390528C28A12D73B36E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A20C65EBA531E14DF53AD2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B332690311A01F88657BEC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cards/Cards.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cards.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -375,7 +444,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A560087E89B36B92A0864A6C /* [CP] Check Pods Manifest.lock */ = {
+		871D499BE43DEB01B7E5D5FF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,7 +462,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AAD2F1775218D3B21C880F3C /* [CP] Check Pods Manifest.lock */ = {
+		8F3D9FE7CE9897B4DD1CB9E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,7 +480,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E2049BA9BAE97B0885F015EF /* [CP] Check Pods Manifest.lock */ = {
+		98F67F247B0154945626124E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,6 +498,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9DD9DC39176C98FFC732CD45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018UITests/Pods-openhouse2018UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F148BAC1276D7E03577EA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018Tests/Pods-openhouse2018Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FC52307C2E3DEC80ED89DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openhouse2018/Pods-openhouse2018-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -436,13 +550,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E712ED720B433080009861C /* CardPlayer.swift in Sources */,
 				2EF4F44A207F92000037CB7C /* ComingNextViewController.swift in Sources */,
+				2E712ED320B433080009861C /* CardGroup.swift in Sources */,
+				2E712ED520B433080009861C /* CardGroupSliding.swift in Sources */,
 				2E95E79020807C7100D6801E /* MapViewController.swift in Sources */,
+				2E712ED120B433080009861C /* CardArticle.swift in Sources */,
 				2E8866FD200475D20090BCAF /* AppDelegate.swift in Sources */,
+				2E712ED920B433080009861C /* DetailViewController.swift in Sources */,
+				2E712ED220B433080009861C /* Card.swift in Sources */,
 				2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */,
+				2E712ED820B433080009861C /* LayoutHelper.swift in Sources */,
+				2E712ED420B433080009861C /* CardHighlight.swift in Sources */,
 				1DB7C6A820918B1900C53FBF /* BoothsData.swift in Sources */,
+				2E712EC720B432FE0009861C /* Player_by_Patric_Piemonte.swift in Sources */,
 				2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */,
 				2E7E68E520A934950059732C /* RedemptionViewController.swift in Sources */,
+				2E712ED620B433080009861C /* Animator.swift in Sources */,
 				2E2E4DBC20859EB600E13691 /* Reachability.swift in Sources */,
 				1D1D8B6F20B1C2F900B2EACD /* ScheduleData.swift in Sources */,
 				2EF4F44C207F92FE0037CB7C /* BoothsViewController.swift in Sources */,
@@ -555,6 +679,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -606,14 +731,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		2E886722200475D30090BCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B146C29F86C0FE40543A4906 /* Pods-openhouse2018.debug.xcconfig */;
+			baseConfigurationReference = 70A3EF1F24FA367F8D694BD6 /* Pods-openhouse2018.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,7 +750,10 @@
 				);
 				INFOPLIST_FILE = openhouse2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.robinvvinod.openhouse2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -634,7 +763,7 @@
 		};
 		2E886723200475D30090BCAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33B9947A7A2ED3C541B57B09 /* Pods-openhouse2018.release.xcconfig */;
+			baseConfigurationReference = 698DEEA2D5AAECACE30E5DE5 /* Pods-openhouse2018.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -645,7 +774,10 @@
 				);
 				INFOPLIST_FILE = openhouse2018/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.robinvvinod.openhouse2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -655,14 +787,18 @@
 		};
 		2E886725200475D30090BCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB8C224A40E2B65D30CC7BFD /* Pods-openhouse2018Tests.debug.xcconfig */;
+			baseConfigurationReference = C319AABC51A2D276406D4488 /* Pods-openhouse2018Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = openhouse2018Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -673,14 +809,18 @@
 		};
 		2E886726200475D30090BCAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4D5CFF49CC2A51F0AE758C7 /* Pods-openhouse2018Tests.release.xcconfig */;
+			baseConfigurationReference = 1541F807258B44D8A8ABAABF /* Pods-openhouse2018Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = openhouse2018Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -691,13 +831,17 @@
 		};
 		2E886728200475D30090BCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6601FF1E00E3D3A10C082C1E /* Pods-openhouse2018UITests.debug.xcconfig */;
+			baseConfigurationReference = 61CDE0A14D69C628DB78A91E /* Pods-openhouse2018UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = openhouse2018UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -708,13 +852,17 @@
 		};
 		2E886729200475D30090BCAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2F632F0B5CFBED23692BD8A /* Pods-openhouse2018UITests.release.xcconfig */;
+			baseConfigurationReference = 9F5193DF040521853F97AB89 /* Pods-openhouse2018UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = openhouse2018UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = robinvvinod.openhouse2018UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

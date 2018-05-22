@@ -146,7 +146,7 @@ import UIKit
         self.addGestureRecognizer(tap)
         tap.delegate = self
         tap.cancelsTouchesInView = false
-       
+        
         detailVC.transitioningDelegate = self
         
         // Adding Subviews
@@ -202,7 +202,7 @@ import UIKit
             vc.present(self.detailVC, animated: true, completion: nil)
         } else {resetAnimated()}
     }
-
+    
     
     //MARK: - Animations
     
@@ -235,7 +235,7 @@ import UIKit
 }
 
 
-    //MARK: - Transition Delegate
+//MARK: - Transition Delegate
 
 extension Card: UIViewControllerTransitioningDelegate {
     
@@ -249,7 +249,7 @@ extension Card: UIViewControllerTransitioningDelegate {
     
 }
 
-    //MARK: - Gesture Delegate
+//MARK: - Gesture Delegate
 
 extension Card: UIGestureRecognizerDelegate {
     
@@ -267,7 +267,7 @@ extension Card: UIGestureRecognizerDelegate {
 }
 
 
-	//MARK: - Helpers
+//MARK: - Helpers
 
 extension UILabel {
     
