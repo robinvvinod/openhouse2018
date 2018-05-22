@@ -18,12 +18,12 @@
 
 ### Future Work
 - [x] Card design
-- [ ] Coming up next
+- [x] Coming up next
 - [x] Booths
 - [x] Activities
 - [x] Search
-- [ ] Map View
-- [ ] Booth Codes
+- [x] Map View
+- [x] Booth Codes
 
 - - - -
 
