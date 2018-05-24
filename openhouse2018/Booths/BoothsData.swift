@@ -14,10 +14,10 @@ struct Subject {
 }
 
 var showcases = [
-	Subject(subject: "Chemistry", location: "Blk C Lvl 1, Chem Lab 2"),
-	Subject(subject: "Physics", location: "Blk C Lvl 1, Bio Lab 2"),
-	Subject(subject: "Biology", location: "Blk C Lvl 1, Bio Lab 1"),
-	Subject(subject: "Biotechnology", location: "Blk C Lvl 1, Biotech Lab 1"),
+	Subject(subject: "Chemistry", location: "Blk C Lvl 1, Chemistry Lab 2"),
+	Subject(subject: "Physics", location: "Blk C Lvl 1, Biology Lab 2"),
+	Subject(subject: "Biology", location: "Blk C Lvl 1, Biology Lab 1"),
+	Subject(subject: "Biotechnology", location: "Blk C Lvl 1, Biotechnology Lab 1"),
 	Subject(subject: "Electronics", location: "Blk C Lvl 2, Engineering Lab"),
 	Subject(subject: "Science TDP", location: "Blk C Lvl 2, Physics Lab 1")
 ]

@@ -323,14 +323,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-QY-WMd">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-QY-WMd">
                                 <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapImg" translatesAutoresizingMaskIntoConstraints="NO" id="U29-X8-QDE">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapImg" translatesAutoresizingMaskIntoConstraints="NO" id="U29-X8-QDE">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="U29-X8-QDE" secondAttribute="trailing" id="AzK-Wz-g9c"/>
+                                    <constraint firstItem="U29-X8-QDE" firstAttribute="leading" secondItem="ue1-QY-WMd" secondAttribute="leading" id="Dlp-V9-SKI"/>
+                                    <constraint firstAttribute="bottom" secondItem="U29-X8-QDE" secondAttribute="bottom" id="KHD-ya-ADG"/>
+                                    <constraint firstItem="U29-X8-QDE" firstAttribute="centerY" secondItem="ue1-QY-WMd" secondAttribute="centerY" id="RZC-a8-66x"/>
+                                    <constraint firstItem="U29-X8-QDE" firstAttribute="centerX" secondItem="ue1-QY-WMd" secondAttribute="centerX" id="hQt-gJ-4ml"/>
+                                    <constraint firstItem="U29-X8-QDE" firstAttribute="top" secondItem="ue1-QY-WMd" secondAttribute="top" id="o5I-iF-Zet"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -467,20 +474,20 @@
                                     <action selector="prizeList:" destination="y2Z-Tj-4rN" eventType="touchUpInside" id="G7n-ZY-kub"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redemption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp3-JS-JS5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redemption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="sp3-JS-JS5">
                                 <rect key="frame" x="16" y="42" width="182" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="182" id="LBg-vH-Y8u"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="182" id="LBg-vH-Y8u"/>
                                     <constraint firstAttribute="height" constant="39" id="dFW-9s-taF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect codes at booths and win attractive prizes!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFD-5T-Q6W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect codes at booths and win attractive prizes!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="VFD-5T-Q6W">
                                 <rect key="frame" x="16" y="84" width="307" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="307" id="LFs-hT-Nz4"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="307" id="LFs-hT-Nz4"/>
                                     <constraint firstAttribute="height" constant="16" id="lSo-ki-U7e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
@@ -494,10 +501,10 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codes redeemed" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIy-Ft-As5">
-                                <rect key="frame" x="142" y="506" width="91" height="62"/>
+                                <rect key="frame" x="145.5" y="506" width="84.5" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="e4B-Al-mjS"/>
-                                    <constraint firstAttribute="width" constant="91" id="kro-kg-YqV"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="91" id="kro-kg-YqV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -511,13 +518,14 @@
                             <constraint firstItem="JHP-MV-wiP" firstAttribute="width" secondItem="ewP-zs-WrL" secondAttribute="width" id="2d1-Ir-6l5"/>
                             <constraint firstItem="PDM-9u-nfx" firstAttribute="top" secondItem="VFD-5T-Q6W" secondAttribute="bottom" constant="29" id="2jk-3j-Oyh"/>
                             <constraint firstItem="PDM-9u-nfx" firstAttribute="centerX" secondItem="2dk-ot-rBh" secondAttribute="centerX" id="8Md-p4-3lU"/>
+                            <constraint firstItem="gif-Xd-HCI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sp3-JS-JS5" secondAttribute="trailing" constant="16" id="BEj-FB-1Ty"/>
                             <constraint firstItem="ewP-zs-WrL" firstAttribute="leading" secondItem="gif-Xd-HCI" secondAttribute="leading" id="CKr-rj-JqZ"/>
                             <constraint firstItem="VFD-5T-Q6W" firstAttribute="top" secondItem="sp3-JS-JS5" secondAttribute="bottom" constant="3" id="E5t-fd-Y8Y"/>
                             <constraint firstItem="VFD-5T-Q6W" firstAttribute="leading" secondItem="sp3-JS-JS5" secondAttribute="leading" id="Li9-EP-xbc"/>
+                            <constraint firstItem="gif-Xd-HCI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VFD-5T-Q6W" secondAttribute="trailing" constant="16" id="RFX-kT-Lqp"/>
                             <constraint firstItem="JHP-MV-wiP" firstAttribute="trailing" secondItem="gif-Xd-HCI" secondAttribute="trailing" id="RSz-p2-Nfg"/>
                             <constraint firstItem="HIy-Ft-As5" firstAttribute="centerX" secondItem="2dk-ot-rBh" secondAttribute="centerX" id="T6j-ZP-dIG"/>
                             <constraint firstItem="rsR-id-Rib" firstAttribute="top" secondItem="JHP-MV-wiP" secondAttribute="bottom" id="Tos-kt-osH"/>
-                            <constraint firstItem="sp3-JS-JS5" firstAttribute="leading" secondItem="gif-Xd-HCI" secondAttribute="leading" constant="16" id="ViP-kU-gjR"/>
                             <constraint firstItem="JHP-MV-wiP" firstAttribute="top" secondItem="PDM-9u-nfx" secondAttribute="bottom" constant="93" id="WRJ-x4-k9y"/>
                             <constraint firstItem="sp3-JS-JS5" firstAttribute="top" secondItem="I7Y-39-6e3" secondAttribute="bottom" constant="22" id="kgZ-1z-0Wz"/>
                             <constraint firstItem="rsR-id-Rib" firstAttribute="top" secondItem="ewP-zs-WrL" secondAttribute="bottom" id="pAm-rZ-24v"/>

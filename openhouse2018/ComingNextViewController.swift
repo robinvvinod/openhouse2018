@@ -53,7 +53,8 @@ class ComingNextViewController: UIViewController, UITableViewDelegate, UITableVi
 		let timeData = Calendar.current.dateComponents(calendarComponents, from: Date())
 		
 		let dayCheck = timeData.day! == 26 && timeData.month! == 5
-		if dayCheck == false { 
+		if dayCheck == false {
+			
 			SwiftMessages.defaultConfig.presentationStyle = .center
 			SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
 			let dayAlert = MessageView.viewFromNib(layout: .centeredView)
@@ -62,9 +63,10 @@ class ComingNextViewController: UIViewController, UITableViewDelegate, UITableVi
 			dayAlert.button?.isHidden = true
 			dayAlert.configureContent(title: "It's not today...", body: "However, SST Open House 2018 does start on 26 May, we hope to see you there!")
 			SwiftMessages.show(view: dayAlert)
+			
 		} else {
 			let allEvents = slot1+slot2+slot3+slot4+slot5+slot6+slot7
-			var requiredEvents = ["President / Vice-President Talk", "Student Panel", "SSTED Talks", "Everyday Innovations"]
+			var requiredEvents = ["Principal / Vice-Principal Talk", "Student Panel", "SSTED Talks", "Everyday Innovations"]
 			
 			for event in allEvents {
 				let timeStartString = String(event["Time"]?.prefix(4) ?? "    ")
