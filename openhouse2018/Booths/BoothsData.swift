@@ -29,7 +29,6 @@ var ccas = [
 	Subject(subject: "Fencing", location: "Blk A Atrium, Foyer"),
 	Subject(subject: "Media Club", location: "Blk A Atrium, Foyer"),
 	Subject(subject: "Showchoir", location: "Blk A Atrium, Foyer"),
-	
 	Subject(subject: "Scouts", location: "Blk A Atrium, Foyer"),
 	Subject(subject: "Robotics", location: "Blk C Lvl 3, Robotics@APEX"),
 	Subject(subject: "SYFC", location: "Blk A Atrium, Foyer")

@@ -31,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2707"/>
                                         <subviews>
                                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Jhc-FT-k2P">
-                                                <rect key="frame" x="22" y="28" width="330" height="56"/>
+                                                <rect key="frame" x="22" y="28" width="332" height="56"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfP-RA-ajy">
@@ -44,27 +44,27 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-cU-v49" customClass="CardPlayer" customModule="openhouse2018">
-                                                <rect key="frame" x="27" y="203" width="320" height="280"/>
+                                                <rect key="frame" x="27" y="203" width="322" height="280"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3g-Ck-8Ti" customClass="CardHighlight" customModule="openhouse2018">
-                                                <rect key="frame" x="27" y="513" width="320" height="384"/>
+                                                <rect key="frame" x="27" y="513" width="322" height="384"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-Rt-LjU" customClass="CardHighlight" customModule="openhouse2018">
-                                                <rect key="frame" x="27" y="927" width="320" height="384"/>
+                                                <rect key="frame" x="27" y="927" width="322" height="384"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBE-Sq-hA2" customClass="CardHighlight" customModule="openhouse2018">
-                                                <rect key="frame" x="27" y="1341" width="320" height="384"/>
+                                                <rect key="frame" x="27" y="1341" width="322" height="384"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzF-2f-8BG" customClass="CardHighlight" customModule="openhouse2018">
-                                                <rect key="frame" x="27" y="1755" width="320" height="384"/>
+                                                <rect key="frame" x="27" y="1755" width="322" height="384"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwF-ld-gIM" customClass="CardHighlight" customModule="openhouse2018">
-                                                <rect key="frame" x="27" y="2169" width="320" height="384"/>
+                                                <rect key="frame" x="27" y="2169" width="322" height="384"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#SSTOH18!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqS-Le-5YB">
@@ -87,8 +87,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-hD-evc">
-                                                <rect key="frame" x="113" y="2573" width="148" height="30"/>
-                                                <state key="normal" title="Leave Feedback? 🍿 "/>
+                                                <rect key="frame" x="69" y="2573" width="238" height="30"/>
+                                                <state key="normal" title="Leave feedback to redeem free🍿 "/>
                                                 <connections>
                                                     <action selector="feedbackForm:" destination="wFM-4L-q0z" eventType="touchUpInside" id="vq0-83-JHV"/>
                                                 </connections>
@@ -215,7 +215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eln-XE-qzi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eln-XE-qzi">
                                 <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
