@@ -174,6 +174,7 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         
         searchBar.text = ""
         aboutSST.play()
+        SwiftMessages.hide()
     }
 	
     // Displaying search query
