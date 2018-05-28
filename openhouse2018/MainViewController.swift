@@ -12,10 +12,11 @@ import SafariServices
 
 class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate {
     
+    // @IBOutlet Declarations
+    
 	@IBOutlet weak var searchBar: UISearchBar!
 	@IBOutlet weak var gradientView: UIView!
     @IBOutlet var comingnext: CardHighlight!
-    @IBOutlet var aboutSST: CardPlayer!
     @IBOutlet var schedule: CardHighlight!
     @IBOutlet var map: CardHighlight!
     @IBOutlet var booths: CardHighlight!
@@ -24,41 +25,66 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
     @IBOutlet var twitterShare: UIImageView!
     @IBOutlet var instagramShare: UIImageView!
     
+    /*
+     
+     CardPlayer class to display aboutSST card
+     - There is no detailView class called for aboutSST as a tap will lead a user to the SST website rather than the detailView.
+     
+    */
+    @IBOutlet var aboutSST: CardPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-        // Initialisation
-        
-        // -------------------------------------------------------------------
-        
 		searchBar.delegate = self
+        
+        /*
+         
+         Keyboard is hidden at viewDidLoad() to prevent keyboard from becoming first responder when
+         app first opens up due to the presence of the searchBar delegate
+ 
+        */
+        
 		self.hideKeyboard()
         
-        // Facebook
+        
+        // UITapGestureRecognizers used to detect taps on social buttons
+        
         let fbRecogniser = UITapGestureRecognizer(target: self, action: #selector(facebook(sender:)))
         fbRecogniser.delegate = self
         self.facebookShare.addGestureRecognizer(fbRecogniser)
         self.facebookShare.isUserInteractionEnabled = true
         
-        // Twitter
         let twitterRecogniser = UITapGestureRecognizer(target: self, action: #selector(twitter(sender:)))
         twitterRecogniser.delegate = self
         self.twitterShare.addGestureRecognizer(twitterRecogniser)
         self.twitterShare.isUserInteractionEnabled = true
         
-        // Instagram
         let instagramRecogniser = UITapGestureRecognizer(target: self, action: #selector(instagram(sender:)))
         instagramRecogniser.delegate = self
         self.instagramShare.addGestureRecognizer(instagramRecogniser)
         self.instagramShare.isUserInteractionEnabled = true
         
-        // Display instructions if first launch
+        
+        // NSUserDefault set-up to check if it is the user's first time launching the app
         
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        
         if !launchedBefore {
+            
+            // Setting NSUserDefault to true to mark that app has been launched before
             UserDefaults.standard.set(true, forKey: "launchedBefore")
+            
+            /*
+             
+             Setting number of codes redeemed by user to 0 at first launch.
+             This prevents a crash when the user first enters the redemption page as
+             the UIImage(named: "code\(self.numberClaimed)") will return nil otherwise
+ 
+            */
             UserDefaults.standard.set(0, forKey: "codes") 
         }
+        
         
         // Check for internet access
     
@@ -74,9 +100,6 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
             SwiftMessages.show(view: internetAlert)
             
         }
-        
-        // -------------------------------------------------------------------
-
         
         // About SST
         
@@ -96,9 +119,10 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         aboutSST.subtitleSize = 16
         aboutSST.hasParallax = false
         
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedAbout(sender:)))
-        tapRecognizer.delegate = self
-        self.aboutSST.addGestureRecognizer(tapRecognizer)
+        // aboutSST uses a tapRecognizer to open up a webpage rather than opening up a detailView
+        let aboutTapped = UITapGestureRecognizer(target: self, action: #selector(tappedAbout(sender:)))
+        aboutTapped.delegate = self
+        self.aboutSST.addGestureRecognizer(aboutTapped)
         self.aboutSST.isUserInteractionEnabled = true
         
         // Coming Next
@@ -200,11 +224,8 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         self.present(webPage, animated: true, completion: nil)
     }
     
-    // SOCIAL BUTTONS
     
-    // -----------------------------------------------------------------------
-    
-    // Facebook
+    // Social buttons UITapGestureRecognizers
     
     @objc func facebook(sender: UITapGestureRecognizer) {
         let url = URL(string: "https://www.facebook.com/ssts.1technologydrive/")!
@@ -212,23 +233,17 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         self.present(webPage, animated: true, completion: nil)
     }
     
-    // Twitter
-    
     @objc func twitter(sender: UITapGestureRecognizer) {
         let url = URL(string: "https://twitter.com/sstsingapore?lang=en")!
         let webPage = SFSafariViewController(url: url)
         self.present(webPage, animated: true, completion: nil)
     }
     
-    // Instagram
-    
     @objc func instagram(sender: UITapGestureRecognizer) {
         let url = URL(string: "https://www.instagram.com/sstudents.life/?hl=en")!
         let webPage = SFSafariViewController(url: url)
         self.present(webPage, animated: true, completion: nil)
     }
-    	
-    // sstinc.org
     
     @IBAction func sstIncSocialButton(_ sender: Any) {
         let url = URL(string: "https://www.sstinc.org/")!
@@ -236,7 +251,6 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
         self.present(webPage, animated: true, completion: nil)
     }
     
-    // ----------------------------------------------------------------------
     
     // Feedback Form
     
@@ -253,6 +267,8 @@ class MainViewController: UIViewController, UISearchBarDelegate, UIGestureRecogn
     }
     
 }
+
+// Extension to dismiss keyboard
 
 extension UIViewController
 {

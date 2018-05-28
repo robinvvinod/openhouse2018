@@ -199,10 +199,9 @@
 				2EA40B592004F1B5008364A8 /* MainViewController.swift */,
 				2EF4F449207F92000037CB7C /* ComingNextViewController.swift */,
 				1DB7C6A620918B0200C53FBF /* Booths */,
-				2E95E78F20807C7100D6801E /* MapViewController.swift */,
-				2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */,
-				1D1D8B6E20B1C2F900B2EACD /* ScheduleData.swift */,
+				2EEE3EB320BC04AF00EB94E2 /* Schedule */,
 				2E7E68E420A934950059732C /* RedemptionViewController.swift */,
+				2E95E78F20807C7100D6801E /* MapViewController.swift */,
 				2E886700200475D20090BCAF /* Main.storyboard */,
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
 				2E7E68E620A93EE20059732C /* Assets.xcassets */,
@@ -237,6 +236,15 @@
 				2E10DEA3206CE35F00F979C7 /* video.mp4 */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		2EEE3EB320BC04AF00EB94E2 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */,
+				1D1D8B6E20B1C2F900B2EACD /* ScheduleData.swift */,
+			);
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		9EECC83AFBD34CAE9C243906 /* Frameworks */ = {
