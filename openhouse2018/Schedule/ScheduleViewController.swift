@@ -10,7 +10,7 @@ import UIKit
 
 struct Category {
     let time : String
-    var items : [[String:Any]]
+    var items : [[String:String]]
 }
 
 class ScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -56,8 +56,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         let items = self.sections[indexPath.section].items
         let item = items[indexPath.row]
-        cell?.textLabel?.text = item["Name"] as? String
-        cell?.detailTextLabel?.text = item["Time"] as? String
+        cell?.textLabel?.text = item["Name"]
+        cell?.detailTextLabel?.text = item["Time"]
         
         return cell!
     }

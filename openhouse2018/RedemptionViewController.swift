@@ -22,8 +22,19 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Retrieving number of codes retrieved before, initially set to 0 at first launch (see MainVC, viewDidLoad())
         numberClaimed = UserDefaults.standard.integer(forKey: "codes")
+        
+        /*
+         
+        The cylinder image is chosen based on the number of codes claimed --> E.g) If there was 3 codes redeemed, the
+        UIImage loaded will be name "code3"
+         
+        */
+        
         cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
+        
+        // Long press recognizer meant to display information to student leaders at redemption booth
         
         let tapRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.tappedImage(_:)))
         tapRecognizer.delegate = self
@@ -49,6 +60,15 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
             
         }
         
+        /*
+         
+         All the booth codes found in Firebase are loaded into the codes[] array in the for loop
+         The codes[] array will be in the following format: ["GGF9", "PCMR"]
+         
+         Refer to the GitHub Wiki for instruction on how to structure the data in Firebase
+         
+        */
+        
         ref = Database.database().reference()
         
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
@@ -65,6 +85,8 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func tappedImage(_ sender: AnyObject) {
         
+        // The popup with the information for student leaders will be displayed
+        
         SwiftMessages.defaultConfig.presentationStyle = .center
         SwiftMessages.defaultConfig.duration = .seconds(seconds: 5)
         let slInfo = MessageView.viewFromNib(layout: .centeredView)
@@ -72,11 +94,14 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
         slInfo.configureDropShadow()
         slInfo.button?.setTitle("Mark as redeemed", for: .normal)
         
+        // Mark as redeemed button allows student leaders to mark the phone as redeemed so that parent's will not be able to redeem again
+        
         slInfo.buttonTapHandler = {
             _ in
             SwiftMessages.hide()
             
-            // Ask for SL password
+            // Ask for SL password to make sure parent's don't accidentally press button and mark their phones as redeemed
+            // UIAlertView with a numberpad is invoked for student leader's to enter the confirmation code
             
             let alert = UIAlertController(title: "Confirmation", message: "Enter the Confirmation Code (SLs)", preferredStyle: .alert)
             
@@ -91,6 +116,8 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
                 // Checking code entered
                 
                 if alert?.textFields![0].text == "1932" {
+                    
+                    // Setting the phone as redeemed so that the property will show true in the future
                     UserDefaults.standard.set(true, forKey: "redeemed")
                 }
                 
@@ -99,6 +126,9 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
             self.present(alert, animated: true, completion: nil)
             
         }
+        
+        // Popup message
+        // Both "DSA registration done?" and "Redeemed Before?" are stored in NSUserDefaults and will return false until the conditions have been met
         
         slInfo.configureContent(title: "Information for SLs", body: "DSA registration done? :   \(UserDefaults.standard.bool(forKey: "dsadone"))\nRedeemed Before? :    \(UserDefaults.standard.bool(forKey: "redeemed"))\n")
         SwiftMessages.show(view: slInfo)
@@ -164,6 +194,7 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
             else {
                 self.numberClaimed += 1
                 
+                // Checking to make sure number of codes redeemed before is less than 10 so that buffer does not overflow causing a crash
                 if self.numberClaimed <= 10 {
                     self.cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
                     UserDefaults.standard.set(self.numberClaimed, forKey: "codes")
@@ -189,6 +220,9 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @IBAction func prizeList(_ sender: Any) {
+        
+        // Display prize list
+        
         SwiftMessages.defaultConfig.presentationStyle = .center
         SwiftMessages.defaultConfig.duration = .seconds(seconds: 10)
         let internetAlert = MessageView.viewFromNib(layout: .centeredView)

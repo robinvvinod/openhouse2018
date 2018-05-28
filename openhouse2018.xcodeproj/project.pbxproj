@@ -29,7 +29,6 @@
 		2E886707200475D20090BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E886705200475D20090BCAF /* LaunchScreen.storyboard */; };
 		2E886712200475D20090BCAF /* openhouse2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E886711200475D20090BCAF /* openhouse2018Tests.swift */; };
 		2E88671D200475D20090BCAF /* openhouse2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88671C200475D20090BCAF /* openhouse2018UITests.swift */; };
-		2E8BBC3A20A98C83003C8C1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BBC3920A98C83003C8C1A /* GoogleService-Info.plist */; };
 		2E95E79020807C7100D6801E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95E78F20807C7100D6801E /* MapViewController.swift */; };
 		2EA40B5A2004F1B5008364A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA40B592004F1B5008364A8 /* MainViewController.swift */; };
 		2EB9510B209B2C2200A72B43 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */; };
@@ -85,7 +84,6 @@
 		2E886718200475D20090BCAF /* openhouse2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openhouse2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E88671C200475D20090BCAF /* openhouse2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openhouse2018UITests.swift; sourceTree = "<group>"; };
 		2E88671E200475D30090BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E8BBC3920A98C83003C8C1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E95E78F20807C7100D6801E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2EA40B592004F1B5008364A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2EB9510A209B2C2200A72B43 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				2E886705200475D20090BCAF /* LaunchScreen.storyboard */,
 				2E7E68E620A93EE20059732C /* Assets.xcassets */,
 				2E886708200475D20090BCAF /* Info.plist */,
-				2E8BBC3920A98C83003C8C1A /* GoogleService-Info.plist */,
 				2EA027782085A2B0002BEB67 /* Assets */,
 			);
 			path = openhouse2018;
@@ -375,7 +372,6 @@
 			files = (
 				2E10DEA4206CE46800F979C7 /* video.mp4 in Resources */,
 				2E886707200475D20090BCAF /* LaunchScreen.storyboard in Resources */,
-				2E8BBC3A20A98C83003C8C1A /* GoogleService-Info.plist in Resources */,
 				2E7E68E720A93EE30059732C /* Assets.xcassets in Resources */,
 				2E886702200475D20090BCAF /* Main.storyboard in Resources */,
 			);

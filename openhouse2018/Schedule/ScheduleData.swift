@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ScheduleData.swift
 //  openhouse2018
 //
 //  Created by Orbit on 20/5/18.

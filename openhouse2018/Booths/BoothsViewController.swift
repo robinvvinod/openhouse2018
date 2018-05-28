@@ -33,6 +33,9 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 	}
 	
 	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        // Setting the follwing headers for the tableView for easier content manipulation
+        
 		return ["Subject Showcases", "CCA Showcase", "Academic Showcases"][section]
 	}
 	
@@ -51,11 +54,6 @@ class BoothsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		
     }
 
 }
