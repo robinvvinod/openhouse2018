@@ -25,7 +25,7 @@
 - [x] Map View
 - [x] Booth Codes
 - [ ] Deeper Analytics
-- [ ] Code Documentation
+- [x] Code Documentation
 
 - - - -
 
