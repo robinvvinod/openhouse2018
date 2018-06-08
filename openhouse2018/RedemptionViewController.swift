@@ -71,7 +71,7 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
         
         ref = Database.database().reference()
         
-        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("Codes").observeSingleEvent(of: .value, with: { (snapshot) in
             for child in snapshot.children {
                 let snap = child as! DataSnapshot
                 let value = snap.value as! [String:Any]
@@ -195,12 +195,33 @@ class RedemptionViewController: UIViewController, UIGestureRecognizerDelegate {
                 self.numberClaimed += 1
                 
                 // Checking to make sure number of codes redeemed before is less than 10 so that buffer does not overflow causing a crash
+                
                 if self.numberClaimed <= 10 {
+                    
                     self.cylinderImage.image = UIImage(named: "code\(self.numberClaimed)")
+                    
                     UserDefaults.standard.set(self.numberClaimed, forKey: "codes")
+                    
                     self.claimed.append(self.enteredCode)
                     UserDefaults.standard.set(self.claimed, forKey: "claimed")
+                    
+                // Increasing counter of redeemed codes through a transaction block
+                    
+                self.ref.child("Analytics").child(self.enteredCode).runTransactionBlock { (currentData: MutableData) -> TransactionResult in
+                    
+                    if var data = currentData.value as? [String: Any] {
+                        var count = data["Count"] as! Int
+                        count += 1
+                        data["Count"] = count
+                            
+                        currentData.value = data
+                    }
+                        
+                    return TransactionResult.success(withValue: currentData)
+                    
+                    }
                 }
+                    
                 else {
                     SwiftMessages.defaultConfig.presentationStyle = .top
                     SwiftMessages.defaultConfig.duration = .seconds(seconds: 5)
